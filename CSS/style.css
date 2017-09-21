@@ -3,7 +3,8 @@ a:link
  text-decoration:none;   
 }   
 
-* {
+* { margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
@@ -43,10 +44,9 @@ a:link
 }
 
 .top nav{
-    background: url(../images/banner.jpg);
-    width: 1350px;
+    background-color: #292929;
+    width: 100%;
     height: 50px;
-    margin: 1px auto;
     vertical-align: middle;
     float: right;
 
@@ -58,7 +58,6 @@ a:link
     display: block;
     float: right;
     list-style-type: none;
-    vertical-align: middle;
     margin-top: 12px;
     
 
@@ -66,10 +65,8 @@ a:link
 
 .menu nav{
     width: 100%;
-    background-image: url(../images/nav_background.jpg);
+    background-color: #292929;
     height: 45px;
-    margin: 1px auto;
-    margin-top: 20px;
     text-align: center;
     float: left;
     align-items: center;
