@@ -10,6 +10,7 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
+    document.getElementById("clicktab").click();
     modal.style.display = "block";
 }
 
@@ -24,3 +25,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 } 
+
+function openTab(evt, accion) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(accion).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+

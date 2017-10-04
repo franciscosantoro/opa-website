@@ -11,151 +11,180 @@
     <link rel="stylesheet" type="text/css" href="CSS/main.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/form.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/modal.css" media="screen" />
-    
+
 
 </head>
 
 
-<header>  
+<header>
 
 
-        <div class="menu ">
+    <div class="menu ">
 
-                <div class="top">
-                        <nav>
-                            
-                            <ul>
-                                <li><a id="myBtn">Registrase / Iniciar sesión</a></li>
-                                <li><a href=""><img src="images\logo.png"></a></li>
-                            </ul>
-                    
-                        </nav>
-                    
-                    </div>
+        <div class="top">
+            <nav>
 
-                    <div class="principal">
-                            <nav>
-                                    <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="quienessomos.html">Quienes Somos</a></li>
-                                        <li><a href="#">Que Hacemos</a></li>
-                                        <li><a href="#">Clientes</a></li>
-                                    </ul>
-                                    
-                                </nav>
-                    </div>
-                
-            
-                
+                <ul>
+                    <li><a id="myBtn">Registrase / Iniciar sesión</a></li>
+                    <li><a href=""><img src="images\logo.png"></a></li>
+                </ul>
+
+            </nav>
+
         </div>
-        </header>
+
+        <div class="principal">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="#">Que Hacemos</a></li>
+                    <li><a href="#">Clientes</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+
+    </div>
+</header>
+
+<body>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="tab">
+                <button id= "clicktab" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</button>
+                <button class="tablinks" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
+            </div>
+
+            <div id="registrarse" class="tabcontent">
+                <form>
+                    <ul class="form-style-1">
+                        <li><label>Nombre completo <span class="required">*</span></label>
+                            <input type="text" name="field1" class="field-divided" placeholder="Nombre" />&nbsp;<input type="text"
+                                name="field2" class="field-divided" placeholder="Apellido" /></li>
+                        <li>
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" name="field3" class="field-long" />
+                        </li>
+
+                        <li>
+                            <label>Nombre de usuario <span class="required">*</span></label>
+                            <input type="username" name="field5" class="field-long" />
+                        </li>
+                        <li>
+                            <label>Contraseña <span class="required">*</span></label>
+                            <input type="password" name="field6" class="field-long" />
+                        </li>
+                        <li>
+                            <label>Sexo</label>
+                            <select name="field4" class="field-select">
+                                                        <option value="Partnership">Masculino</option>
+                                                        <option value="General Question">Femenino</option>
+                                                        </select>
+                        </li>
+
+                        <li>
+                            <input type="submit" value="Enviar" />
+                        </li>
+                    </ul>
+                </form>
+
+            </div>
+            <div id="iniciar" class="tabcontent">
+                    <form>
+                        <ul class="form-style-1">
+
+                            
+                            <li>
+                                <label>Nombre de usuario <span class="required">*</span></label>
+                                <input type="username" name="field5" class="field-long" />
+                            </li>
+                            <li>
+                                <label>Contraseña <span class="required">*</span></label>
+                                <input type="password" name="field6" class="field-long" />
+                            </li>
+                            
     
-    <body>
-            
-            <div id="myModal" class="modal">
-                    
-                      <!-- Modal content -->
-                      <div class="modal-content">
-                          <span><b>Registrase</b></span>
-                        <span class="close">&times;</span>
+                            <li>
+                                <input type="submit" value="Iniciar" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
 
-                        <form>
-                            <ul class="form-style-1">
-                                <li><label>Nombre completo <span class="required">*</span></label>
-                                    <input type="text" name="field1" class="field-divided" placeholder="Nombre" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" /></li>
-                                <li>
-                                    <label>Email <span class="required">*</span></label>
-                                    <input type="email" name="field3" class="field-long" />
-                                </li>
-                                
-                                <li>
-                                    <label>Nombre de usuario <span class="required">*</span></label>
-                                    <input type="username" name="field5" class="field-long" />
-                                </li>
-                                <li>
-                                    <label>Contraseña <span class="required">*</span></label>
-                                    <input type="password" name="field6" class="field-long" />
-                                </li>
-                                <li>
-                                    <label>Sexo</label>
-                                    <select name="field4" class="field-select">
-                                    <option value="Partnership">Masculino</option>
-                                    <option value="General Question">Femenino</option>
-                                    </select>
-                                </li>
-                                
-                                <li>
-                                    <input type="submit" value="Submit" />
-                                </li>
-                            </ul>
-                            </form>
+        </div>
 
-                      </div>
-                    
-                    </div>
-    
-         <div>
-             <article class="caja col-12">imagen</article>
-         </div>
+    </div>
 
-            <div class="caja col-4">
-                <article>feature 1</article>
-            </div>
+    <div>
+        <article class="caja col-12">imagen</article>
+    </div>
 
-            <div class="caja col-4">
-                <article>feature 2</article>
-            </div>
+    <div class="caja col-4">
+        <article>feature 1</article>
+    </div>
 
-            <div class="caja col-4">
-                <article >feature 3</article>
-            </div>
+    <div class="caja col-4">
+        <article>feature 2</article>
+    </div>
 
-            <script src="js/modal.js"></script>
+    <div class="caja col-4">
+        <article>feature 3</article>
+    </div>
+
+    <script src="js/modal.js"></script>
 
 </body>
 
 <footer>
     <section>
-   <div class="columnaredes">
-    <li>
-        <a href=""><img src="images\instagram.png"></a>
-    </li>
-    <li>
-        <a href=""><img src="images\twitter.png"></a>
-    </li>
-    <li>
-        <a href=""><img src="images\face.png"></a>
-    </li>
-     </div>
-    <div class="columnasfoot">
-        <ul>
-            <h5>Encontrá lo que buscás!</h5>
-            <li>Ofertas del Día</li>
-            <li>Estética y bienestar</li>
-            <li>Restaurantes para hoy</li>
-            <li>Viajes</li>
-        </ul>
-    </div>
+        <div class="columnaredes">
+            <li>
+                <a href=""><img src="images\instagram.png"></a>
+            </li>
+            <li>
+                <a href=""><img src="images\twitter.png"></a>
+            </li>
+            <li>
+                <a href=""><img src="images\face.png"></a>
+            </li>
+        </div>
+        <div class="columnasfoot">
+            <ul>
+                <h5>Encontrá lo que buscás!</h5>
+                <li>Ofertas del Día</li>
+                <li>Estética y bienestar</li>
+                <li>Restaurantes para hoy</li>
+                <li>Viajes</li>
+            </ul>
+        </div>
 
-    <div class="columnasfoot">
-       <ul>
-            <h5>Sobre Nosotros</h5>
-            <li>Quienes somos</li>
-            <li>Contacto</li>
-            <li>Trabaja con nosotros</li>
-            <li>Política de Privacidad</li>
-        </ul>
-    </div>
+        <div class="columnasfoot">
+            <ul>
+                <h5>Sobre Nosotros</h5>
+                <li>Quienes somos</li>
+                <li>Contacto</li>
+                <li>Trabaja con nosotros</li>
+                <li>Política de Privacidad</li>
+            </ul>
+        </div>
 
-    <div class="columnasfoot">
-        <ul>
-            <h5>Contacto:</h5>
-            <li>info@opa.com.uy</li>
-            <li>(+598) 2408 7584</li>
-            <li>Julio Herrera y Obes 1302 esq. Mercedes</li>
-            <li>Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</li>
-        </ul>
-    </div>
+        <div class="columnasfoot">
+            <ul>
+                <h5>Contacto:</h5>
+                <li>info@opa.com.uy</li>
+                <li>(+598) 2408 7584</li>
+                <li>Julio Herrera y Obes 1302 esq. Mercedes</li>
+                <li>Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</li>
+            </ul>
+        </div>
     </section>
 </footer>
 
