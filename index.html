@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>oPa!</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="CSS/form.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/modal.css" media="screen" />
     
 
@@ -24,7 +25,7 @@
                         <nav>
                             
                             <ul>
-                                <li><a id="myBtn">Registrate / Iniciar sesión</a></li>
+                                <li><a id="myBtn">Registrase / Iniciar sesión</a></li>
                                 <li><a href=""><img src="images\logo.png"></a></li>
                             </ul>
                     
@@ -55,33 +56,39 @@
                     
                       <!-- Modal content -->
                       <div class="modal-content">
+                          <span><b>Registrase</b></span>
                         <span class="close">&times;</span>
 
-                        <form class="" name="registro" method="post" onsubmit="return validation()">
-                                <ul>
-                                  <li><label for="nombre">Nombre:</label></li>
-                                  <li><input type="text" name="nombre" id="nombre" value=""><span id="msgnombre"></span></li>
-                                  <li><label for="apellido">Apellido:</label></li>
-                                  <li><input type="text" name="apellido" id="apellido" value=""><span id="msgapellido"></span></li>
-                                  <li><label for="telefono">Teléfono:</label></li>
-                                  <li><input type="tel" name="telefono" id="telefono" value=""><span id="msgtelefono"></span></li>
-                                  <li><label for="localidad">Localidad:</label></li>
-                                  <li><input type="text" name="localidad" id="localidad" value=""><span id="msglocalidad"></span></li>
-                                  <li><label for="email1">Correo electrónico:</label></li>
-                                  <li><input type="email" name="email1" id="email1" value=""><span id="msgemail1"></span></li>
-                                  <li><label for="email2">Repetir correo electrónico:</label></li>
-                                  <li><input type="email" name="email2" id="email2" value=""><span id="msgemail2"></span></li>
-                                  <li><label for="contraseña1">Contraseña:</label></li>
-                                  <li><input type="password" name="contraseña1" id="contraseña1" value=""><span id="msgcontraseña1"></span></li>
-                                  <li><label for="contraseña2">Repetir contraseña:</label></li>
-                                  <li><input type="password" name="contraseña2" id="contraseña2" value=""><span id="msgcontraseña2"></span></li>
-                                  <li><input type="checkbox" name="chk1" id="chk1" value=""><label for="chk1">Acepto recibir notificaciones de <b>Opa!</b> por email.</label></li>
-                                  <li><input type="checkbox" name="chk2" id="chk2" value=""><label for="chk2">Leí y acepto los <a href="#">Términos y Condiciones</a> y <a href="#">Política de Privacidad.</a></label></li>
-                                  <input type="submit" name="submit" id="submit" value="Crear cuenta">
-                        
-                                </ul>
-                        
-                              </form>
+                        <form>
+                            <ul class="form-style-1">
+                                <li><label>Nombre completo <span class="required">*</span></label>
+                                    <input type="text" name="field1" class="field-divided" placeholder="Nombre" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" /></li>
+                                <li>
+                                    <label>Email <span class="required">*</span></label>
+                                    <input type="email" name="field3" class="field-long" />
+                                </li>
+                                
+                                <li>
+                                    <label>Nombre de usuario <span class="required">*</span></label>
+                                    <input type="username" name="field5" class="field-long" />
+                                </li>
+                                <li>
+                                    <label>Contraseña <span class="required">*</span></label>
+                                    <input type="password" name="field6" class="field-long" />
+                                </li>
+                                <li>
+                                    <label>Sexo</label>
+                                    <select name="field4" class="field-select">
+                                    <option value="Partnership">Masculino</option>
+                                    <option value="General Question">Femenino</option>
+                                    </select>
+                                </li>
+                                
+                                <li>
+                                    <input type="submit" value="Submit" />
+                                </li>
+                            </ul>
+                            </form>
 
                       </div>
                     
