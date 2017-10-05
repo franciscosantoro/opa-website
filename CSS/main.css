@@ -4,15 +4,15 @@ a:link {
 
 a,
 a:visited {
-    color: #ccc;
+    color: #242424;
 }
 
 a:hover {
-    color: #fff;
+    color: #727272;
 }
 
 a {
-    color: #ccc;
+    color: #242424;
 }
 
 * {
@@ -21,7 +21,6 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
 .caja {
     border-width: 3px;
     border-color: #3D3D3D;
@@ -29,8 +28,20 @@ a {
     margin-right: 3px;
     background-color: #C0C0C0;
 }
+.logo{
+    background-image: url(../images/fondo.jpg);
+}
+
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+}
 
 [class*="col-"] {
+    height: 50px;
     float: left;
     padding: 15px;
 }
@@ -85,7 +96,8 @@ a {
 
 
 .menu{
-    background-color: #3B4EAC;
+    color: #242424;
+    background-color: #FFFFFF;
     height: 45px;
 }
 
@@ -118,16 +130,21 @@ a {
     float: left;
     list-style-type: none;
 }
-
+body{
+    
+    padding-bottom:1500px;
+      
+}
 footer {
-    height: 200px;
+    height: 150px;
     background: #F0F0F0;
     color: black;
     text-align: center;
+    position: fixed;
     padding: 10px;
     bottom: 0;
     width: 100%;
-    position: absolute;
+    
 }
 
 .columnasfoot {
