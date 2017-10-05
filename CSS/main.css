@@ -22,11 +22,15 @@ a {
     box-sizing: border-box;
 }
 .caja {
-    border-width: 3px;
-    border-color: #3D3D3D;
-    margin-top: 3px;
-    margin-right: 3px;
-    background-color: #C0C0C0;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+.titulo {
+    text-align: center;
+    background-color: #FFFFFF;
 }
 .logo{
     background-image: url(../images/fondo.jpg);
