@@ -21,6 +21,12 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+.separador {
+    clear: both;
+    height: 100%;
+}
+
 .caja {
     text-align: center;
     display: block;
@@ -28,15 +34,17 @@ a {
     margin-right: auto;
     background-color: #FFFFFF;
 }
+
 .titulo {
     text-align: center;
     background-color: #FFFFFF;
 }
-.logo{
+
+.logo {
     background-image: url(../images/fondo.jpg);
 }
 
-.logo img{
+.logo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +53,6 @@ a {
 }
 
 [class*="col-"] {
-    height: 50px;
     float: left;
     padding: 15px;
 }
@@ -98,69 +105,27 @@ a {
     width: calc(100% - 4px);
 }
 
-
-.menu{
-    color: #242424;
-    background-color: #BEBEBE;
-    height: 45px;
-}
-
-.menu .top nav {
-    vertical-align: middle;
-    float: right;
-    
-}
-
-.menu .top nav li {
-    margin-right: 50px;
-    display: block;
-    float: left;
-    list-style-type: none;
-    margin-top: 12px;
-}
-
-.menu .principal nav {
-    margin-left: 50px;
-    height: 45px;
-    text-align: center;
-    align-items: center;
-}
-
-.menu .principal nav li {
-    margin-left: 20px;
-    margin-top: 12px;
-    height: 45px;
-    display: block;
-    float: left;
-    list-style-type: none;
-}
-body{
-    
-    padding-bottom:1500px;
-      
-}
 footer {
     height: 150px;
-    background: #F0F0F0;
-    color: black;
+    background: #AD1818;
+    color: #CCCCCC;
     text-align: center;
-    position: fixed;
     padding: 10px;
-    bottom: 0;
     width: 100%;
-    
 }
 
-.columnasfoot {
+
+
+footer .columnasfoot {
     width: 25%;
     float: left;
 }
 
-.columnasfoot ul li {
+footer .columnasfoot ul li {
     list-style-type: none;
 }
 
-.columnaredes li {
+footer .columnaredes li {
     list-style-type: none;
     float: right;
     margin: 10px;
