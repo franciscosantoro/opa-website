@@ -24,7 +24,6 @@ a {
 }
 
 html, body {
-    background: #d1b517;
     height: 100%;
 }
 
@@ -58,9 +57,8 @@ html, body {
         height: auto;
     }
 
-    /*ESTE ES EL CONTENEDOR FLEXBOX QUE ENGLOBA AL MENU Y LOS PRODUCTOS (FUNCIONA BIEN EN FIREFOX, DA PROBLEMAS EN CHROME) */
+    /*ESTE ES EL CONTENEDOR FLEXBOX QUE ENGLOBA AL MENU Y LOS PRODUCTOS*/
     .medio{
-        background: #a3229d;
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -76,7 +74,6 @@ html, body {
     }
     /*ACÁ VAN LAS PROPIEDADES DEL MENÚ, PERO TIENE SU CSS INDEPENDIENTE (menu.css)*/
         .productos {
-            background: #162a9b;
             width: auto;
             display: -webkit-box;
             display: -ms-flexbox;
