@@ -29,7 +29,6 @@ html, body {
 }
 
 .contenedor {
-    background: black;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -56,8 +55,6 @@ html, body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
 }
 .productos {
     background: #162a9b;
