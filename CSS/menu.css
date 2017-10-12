@@ -50,6 +50,20 @@ nav li {
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
+
+
+/*ACÁ SE ESPECIFICA LA FORMA DE FUNCINAR DE LOS BOTONES CUANDO SE LES HACE "HOVER"*/
+/*HOME*/
+.btn-home span{
+    visibility: hidden;
+    font-size: 20px;
+}
+
+.btn-home:hover span{
+    visibility: visible;
+  font-size: 20px;
+}
+/*ESTÉTICA*/
 .btn-este span{
     visibility: hidden;
     font-size: 20px;
@@ -59,23 +73,57 @@ nav li {
     visibility: visible;
   font-size: 20px;
 }
-.btn-tl span:after{
-  content: ' Tiempo Libre';
+/*TIEMPO LIBRE*/
+.btn-tl span{
+    visibility: hidden;
+    font-size: 20px;
+}
+
+.btn-tl:hover span{
+    visibility: visible;
+  font-size: 20px;
+
+}
+/*HOTELES*/
+.btn-hot span{
+    visibility: hidden;
+    font-size: 20px;
+}
+
+.btn-hot:hover span{
+    visibility: visible;
   font-size: 20px;
 }
-.btn-serv span:after{
-    content: ' Servicios';
+/*VIAJES*/
+.btn-viaj span{
+    visibility: hidden;
     font-size: 20px;
-  }
-  .btn-reg span:after{
-    content: ' Regstrarse';
-    font-size: 20px;
-  }
-
-.button:hover span {
-  padding-right: 25px;
 }
 
+.btn-viaj:hover span{
+    visibility: visible;
+  font-size: 20px;
+}
+/*SERVICIOS*/
+.btn-serv span{
+    visibility: hidden;
+    font-size: 20px;
+}
+
+.btn-serv:hover span{
+    visibility: visible;
+  font-size: 20px;
+}
+/*REGISTRO*/
+.btn-reg span{
+    visibility: hidden;
+    font-size: 20px;
+}
+
+.btn-reg:hover span{
+    visibility: visible;
+  font-size: 20px;
+}
 .button:hover {
  
   background-color: #6d0c0c;
