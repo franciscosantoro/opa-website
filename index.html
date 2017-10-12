@@ -17,237 +17,294 @@
 
 </head>
 
+        
 
+<body> 
 
-<header>
-    <div class="logo">
-        <img src="images/opa!.png" alt="">
-    </div>
+        <div class="contenedor"> <!--ACÁ EMPIEZA EL CONTENEDOR PATA TODO EL FLEXBOX DE LA PÁGINA-->
 
-
-    <div class="menu col-2">
-
-        <div class="principal">
-            <nav>
-                <ul>
-                    <li><a href="quienessomos.html"><button class="button" style="vertical-align:middle"><span>Home </span></button></a></li>
-                    <li><a href="quienessomos.html"><button class="button" style="vertical-align:middle"><span>Estética </span></button></a></li>
-                    <li><a href="#"><button class="button" style="vertical-align:middle"><span>Tiempo Libre </span></button></a></li>
-                    <li><a href="#"><button class="button" style="vertical-align:middle"><span>Hoteles </span></button></a></li>
-                    <li><a href="#"><button class="button" style="vertical-align:middle"><span>Viajes</span></button></a></li>
-                    <li><a href="#"><button class="button" style="vertical-align:middle"><span>Servicios </span></button></a></li>
-                    <li><a id="myBtn">Registrase / Iniciar sesión</a></li>
-                    <li><a href=""><img src="images\carrito.png"></a></li>
-                </ul>
-
-            </nav>
-        </div>
-
-        <div class="top">
-            <nav>
-
-                <ul>
-                    
-                </ul>
-
-            </nav>
-
-        </div>
-
-
-    </div>
-</header>
-
-<body>
-
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-
-            <div class="tab">
-                <button id="clicktab" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</button>
-                <button class="tablinks" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
-            </div>
-
-            <div id="registrarse" class="tabcontent">
-                <form>
-                    <ul class="form-style-1">
-                        <li><label>Nombre completo <span class="required">*</span></label>
-                            <input type="text" name="field1" class="field-divided" placeholder="Nombre" />&nbsp;<input type="text"
-                                name="field2" class="field-divided" placeholder="Apellido" /></li>
-                        <li>
-                            <label>Email <span class="required">*</span></label>
-                            <input type="email" name="field3" class="field-long" />
-                        </li>
-
-                        <li>
-                            <label>Nombre de usuario <span class="required">*</span></label>
-                            <input type="username" name="field5" class="field-long" />
-                        </li>
-                        <li>
-                            <label>Contraseña <span class="required">*</span></label>
-                            <input type="password" name="field6" class="field-long" />
-                        </li>
-                        <li>
-                            <label>Sexo</label>
-                            <select name="field4" class="field-select">
-                                                        <option value="Partnership">Masculino</option>
-                                                        <option value="General Question">Femenino</option>
-                                                        </select>
-                        </li>
-
-                        <li>
-                            <input type="submit" value="Enviar" />
-                        </li>
-                    </ul>
-                </form>
-
-            </div>
-            <div id="iniciar" class="tabcontent">
-                <form>
-                    <ul class="form-style-1">
-
-
-                        <li>
-                            <label>Nombre de usuario <span class="required">*</span></label>
-                            <input type="username" name="field5" class="field-long" />
-                        </li>
-                        <li>
-                            <label>Contraseña <span class="required">*</span></label>
-                            <input type="password" name="field6" class="field-long" />
-                        </li>
-
-
-                        <li>
-                            <input type="submit" value="Iniciar" />
-                        </li>
-                    </ul>
-                </form>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="col-12">
-        <h4 class="titulo">Ofertas del día</h4>
-    </div>
-
-    <div class="col-2">
-        <div class="caja">
-                <div class="product-grid">
-                        <div class="product-grid__product">
-                            <div class="product-grid__img-wrapper">			
-                                <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
-                            </div>
-                            <span class="product-grid__title">Product title</span>
-                            <span class="product-grid__price">1.399€</span>
-                            <div class="product-grid__extend-wrapper">
-                                <div class="product-grid__extend">
-                                    <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-                                    <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </div>
-    </div>
-
-    <div class="col-2">
-            <div class="caja">
-                    <div class="product-grid__product-wrapper">
-                            <div class="product-grid__product">
-                                <div class="product-grid__img-wrapper">			
-                                    <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
-                                </div>
-                                <span class="product-grid__title">Product title</span>
-                                <span class="product-grid__price">1.399€</span>
-                                <div class="product-grid__extend-wrapper">
-                                    <div class="product-grid__extend">
-                                        <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                        <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-                                        <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-        </div>
-
-        <div class="col-2">
-                <div class="caja">
-                        <div class="product-grid__product-wrapper">
-                                <div class="product-grid__product">
-                                    <div class="product-grid__img-wrapper">			
-                                        <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
-                                    </div>
-                                    <span class="product-grid__title">Product title</span>
-                                    <span class="product-grid__price">1.399€</span>
-                                    <div class="product-grid__extend-wrapper">
-                                        <div class="product-grid__extend">
-                                            <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                            <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
-                                            <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="logo">
+                    <img src="images/opa!.png">
                 </div>
+            
+            
+   <!--ACÁ EMPIEZA EL FORMULARIO DE REGISTRO (no se ve hasta ejecutarlo)-->
+
+   <div id="myModal" class="modal">
+    
+            
+            <div class="modal-content">
+                <span class="close">&times;</span>
+    
+                <div class="tab">
+                    <button id="clicktab" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</button>
+                    <button class="tablinks" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
+                </div>
+    
+                <div id="registrarse" class="tabcontent">
+                    <form>
+                        <ul class="form-style-1">
+                            <li><label>Nombre completo <span class="required">*</span></label>
+                                <input type="text" name="field1" class="field-divided" placeholder="Nombre" />&nbsp;<input type="text"
+                                    name="field2" class="field-divided" placeholder="Apellido" /></li>
+                            <li>
+                                <label>Email <span class="required">*</span></label>
+                                <input type="email" name="field3" class="field-long" />
+                            </li>
+    
+                            <li>
+                                <label>Nombre de usuario <span class="required">*</span></label>
+                                <input type="username" name="field5" class="field-long" />
+                            </li>
+                            <li>
+                                <label>Contraseña <span class="required">*</span></label>
+                                <input type="password" name="field6" class="field-long" />
+                            </li>
+                            <li>
+                                <label>Sexo</label>
+                                <select name="field4" class="field-select">
+                                                            <option value="Partnership">Masculino</option>
+                                                            <option value="General Question">Femenino</option>
+                                                            </select>
+                            </li>
+    
+                            <li>
+                                <input type="submit" value="Enviar" />
+                            </li>
+                        </ul>
+                    </form>
+    
+                </div>
+                <div id="iniciar" class="tabcontent">
+                    <form>
+                        <ul class="form-style-1">
+    
+    
+                            <li>
+                                <label>Nombre de usuario <span class="required">*</span></label>
+                                <input type="username" name="field5" class="field-long" />
+                            </li>
+                            <li>
+                                <label>Contraseña <span class="required">*</span></label>
+                                <input type="password" name="field6" class="field-long" />
+                            </li>
+    
+    
+                            <li>
+                                <input type="submit" value="Iniciar" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+    
             </div>
     
+        </div>
+
+
+
+
+
+        <div class="titulo">
+            <h4 >Ofertas del día</h4>
+        </div>
+
+<!--ACÁ VA EL MENÚ-->
+        <div class="medio">
+            
+                    <nav>
+                        <ul>
+                            <li><a href="quienessomos.html"><button class="button" style="vertical-align:middle"><span>Home</span></button></a></li>
+                            <li><a href="quienessomos.html"><button class="button" style="vertical-align:middle"><span>Estética</span></button></a></li>
+                            <li><a href="quienessomos.html"><button class="button" style="vertical-align:middle"><span>Tiempo Libre</span></button></a></li>
+                            <li><a href="quienessomos.html"><button class="button" style="vertical-align:middle"><span>Hoteles</span></button></a></li>
+                            <li><a href="quienessomos.html"><button class="button" style="vertical-align:middle"><span>Viajes</span></button></a></li>
+                            <li><a href="quienessomos.html"><button class="button" style="vertical-align:middle"><span>Servicios</span></button></a></li>
+                            <li><a id="myBtn"><button class="button" style="vertical-align:middle"><span>Registrarse</span></button></a></li>
+                        </ul>
+        
+                    </nav>
+            
+
+<!--ACÁ EMPEZAN LOS PRODUCTOS-->
+<div class="productos">
+
+    
+        <div class="caja">
+                
+                        
+                            <div>			
+                                <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
+                            </div>
+                            <span>Product title</span>
+                            <span>1.399€</span>
+                            <div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                    <span><i></i> Add to cart</span>				
+                                    <span><i></i> View more</span>
+                                </div>
+                            </div>
+                        
+                    
+        </div>
+    
+        <div class="caja">
+                
+                        
+                            <div>			
+                                <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
+                            </div>
+                            <span>Product title</span>
+                            <span>1.399€</span>
+                            <div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                    <span><i></i> Add to cart</span>				
+                                    <span><i></i> View more</span>
+                                </div>
+                            </div>
+                        
+                    
+        </div>
+    
+        <div class="caja">
+                
+                        
+                            <div>			
+                                <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
+                            </div>
+                            <span>Product title</span>
+                            <span>1.399€</span>
+                            <div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                    <span><i></i> Add to cart</span>				
+                                    <span><i></i> View more</span>
+                                </div>
+                            </div>
+                        
+                    
+        </div>
+        <div class="caja">
+                
+                        
+                            <div>			
+                                <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
+                            </div>
+                            <span>Product title</span>
+                            <span>1.399€</span>
+                            <div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                    <span><i></i> Add to cart</span>				
+                                    <span><i></i> View more</span>
+                                </div>
+                            </div>
+                        
+                    
+        </div>
+        <div class="caja">
+                
+                        
+                            <div>			
+                                <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
+                            </div>
+                            <span>Product title</span>
+                            <span>1.399€</span>
+                            <div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                    <span><i></i> Add to cart</span>				
+                                    <span><i></i> View more</span>
+                                </div>
+                            </div>
+                        
+                    
+        </div>
+        <div class="caja">
+                
+                        
+                            <div>			
+                                <img src="https://images.apple.com/euro/macbook/a/screens/specs/images/finish_silver_large.jpg" alt="Img" class="product-grid__img" />
+                            </div>
+                            <span>Product title</span>
+                            <span>1.399€</span>
+                            <div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                    <span><i></i> Add to cart</span>				
+                                    <span><i></i> View more</span>
+                                </div>
+                            </div>
+                        
+                    
+        </div>
+        
+
+        
+                
+            </div>
+        
+        </div>
+    
+<!--ACA EMPIEZA EL FOOTER, SIGUE DENTRO DEL "CONTENEDOR"-->
+    <div class="pie">
+            <section>
+                <div class="columnaredes">
+                    <li>
+                        <a href=""><img src="images\instagram.png"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images\twitter.png"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images\face.png"></a>
+                    </li>
+                </div>
+                <div class="columnasfoot">
+                    <ul>
+                        <h5>Encontrá lo que buscás!</h5>
+                        <li>Ofertas del Día</li>
+                        <li>Estética y bienestar</li>
+                        <li>Restaurantes para hoy</li>
+                        <li>Viajes</li>
+                    </ul>
+                </div>
+    
+                <div class="columnasfoot">
+                    <ul>
+                        <h5>Sobre Nosotros</h5>
+                        <li>Quienes somos</li>
+                        <li>Contacto</li>
+                        <li>Trabaja con nosotros</li>
+                        <li>Política de Privacidad</li>
+                    </ul>
+                </div>
+    
+                <div class="columnasfoot">
+                    <ul>
+                        <h5>Contacto:</h5>
+                        <li>info@opa.com.uy</li>
+                        <li>(+598) 2408 7584</li>
+                        <li>Julio Herrera y Obes 1302 esq. Mercedes</li>
+                        <li>Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+
+    </div> <!--ACÁ TERMINA EL CONTENEDOR PARA FLEXBOX DE TODA LA PÁGINA-->
+
 
     <script src="js/modal.js"></script>
-
+    
 </body>
-<div class="separador"></div>
-</div>
 
-<footer>
-        <section>
-            <div class="columnaredes">
-                <li>
-                    <a href=""><img src="images\instagram.png"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images\twitter.png"></a>
-                </li>
-                <li>
-                    <a href=""><img src="images\face.png"></a>
-                </li>
-            </div>
-            <div class="columnasfoot">
-                <ul>
-                    <h5>Encontrá lo que buscás!</h5>
-                    <li>Ofertas del Día</li>
-                    <li>Estética y bienestar</li>
-                    <li>Restaurantes para hoy</li>
-                    <li>Viajes</li>
-                </ul>
-            </div>
+ 
 
-            <div class="columnasfoot">
-                <ul>
-                    <h5>Sobre Nosotros</h5>
-                    <li>Quienes somos</li>
-                    <li>Contacto</li>
-                    <li>Trabaja con nosotros</li>
-                    <li>Política de Privacidad</li>
-                </ul>
-            </div>
 
-            <div class="columnasfoot">
-                <ul>
-                    <h5>Contacto:</h5>
-                    <li>info@opa.com.uy</li>
-                    <li>(+598) 2408 7584</li>
-                    <li>Julio Herrera y Obes 1302 esq. Mercedes</li>
-                    <li>Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+
 
 </html>
