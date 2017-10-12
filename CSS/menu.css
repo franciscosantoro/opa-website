@@ -25,6 +25,7 @@ nav li {
   border: none;
   color: #FFFFFF;
   text-align: center;
+  height: 70px;
   font-size: 30px;
   padding-top: 10px;
   padding-bottom:10px; 
@@ -49,16 +50,28 @@ nav li {
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
+.btn-este span{
+    visibility: hidden;
+    font-size: 20px;
+}
 
-
-.btn-este span:after{
-  content: ' Estética';
+.btn-este:hover span{
+    visibility: visible;
   font-size: 20px;
 }
 .btn-tl span:after{
   content: ' Tiempo Libre';
   font-size: 20px;
 }
+.btn-serv span:after{
+    content: ' Servicios';
+    font-size: 20px;
+  }
+  .btn-reg span:after{
+    content: ' Regstrarse';
+    font-size: 20px;
+  }
+
 .button:hover span {
   padding-right: 25px;
 }
