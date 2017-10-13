@@ -7,9 +7,6 @@ nav {
   position: fixed;
   width: 300px;
   text-align: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 nav li {
@@ -20,7 +17,6 @@ nav li {
 
 .button {
   /**/
-  display: inline-block;
   background-color: #f4511e;
   border: none;
   color: #FFFFFF;
@@ -38,8 +34,8 @@ nav li {
   display: inline-block;
 }
 .button span {
+  overflow: hidden;
   cursor: pointer;
-  display: inline-block;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -53,75 +49,76 @@ nav li {
 
 
 /*ACÁ SE ESPECIFICA LA FORMA DE FUNCINAR DE LOS BOTONES CUANDO SE LES HACE "HOVER"*/
+
 /*HOME*/
 .btn-home span{
-    visibility: hidden;
+    display: none;
     font-size: 20px;
 }
 
 .btn-home:hover span{
-    visibility: visible;
+  display: inline-block;
   font-size: 20px;
 }
 /*ESTÉTICA*/
 .btn-este span{
-    visibility: hidden;
+  display: none;
     font-size: 20px;
 }
 
 .btn-este:hover span{
-    visibility: visible;
+    display: inline-block;
   font-size: 20px;
 }
 /*TIEMPO LIBRE*/
 .btn-tl span{
-    visibility: hidden;
+  display: none;
     font-size: 20px;
 }
 
 .btn-tl:hover span{
-    visibility: visible;
+  display: inline-block;
   font-size: 20px;
 
 }
 /*HOTELES*/
 .btn-hot span{
-    visibility: hidden;
+  display: none;
     font-size: 20px;
 }
 
 .btn-hot:hover span{
-    visibility: visible;
+  display: inline-block;
   font-size: 20px;
 }
 /*VIAJES*/
 .btn-viaj span{
-    visibility: hidden;
+  display: none;
     font-size: 20px;
 }
 
 .btn-viaj:hover span{
-    visibility: visible;
+  display: inline-block;
   font-size: 20px;
 }
 /*SERVICIOS*/
 .btn-serv span{
-    visibility: hidden;
+  display: none;
     font-size: 20px;
 }
 
 .btn-serv:hover span{
-    visibility: visible;
+  display: inline-block;
   font-size: 20px;
 }
 /*REGISTRO*/
 .btn-reg span{
-    visibility: hidden;
+  display: none;
     font-size: 20px;
 }
 
 .btn-reg:hover span{
-    visibility: visible;
+  display: inline-block;
   font-size: 20px;
 }
 .button:hover {
