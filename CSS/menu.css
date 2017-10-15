@@ -17,7 +17,7 @@ nav li {
 
 .button {
   /**/
-  background-color: #f4511e;
+  background-color: #444444;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -55,75 +55,96 @@ nav li {
     display: none;
     font-size: 20px;
 }
-
+.btn-home:hover{
+  background-color: #19a391;
+}
 .btn-home:hover span{
   display: inline-block;
   font-size: 20px;
 }
+
 /*ESTÉTICA*/
 .btn-este span{
   display: none;
     font-size: 20px;
 }
-
+.btn-este:hover{
+  background-color: #c22b2b;
+}
 .btn-este:hover span{
     display: inline-block;
   font-size: 20px;
 }
+
 /*TIEMPO LIBRE*/
 .btn-tl span{
   display: none;
     font-size: 20px;
 }
-
+.btn-tl:hover{
+  background-color: #0f9da1;
+}
 .btn-tl:hover span{
   display: inline-block;
   font-size: 20px;
 
 }
+
 /*HOTELES*/
 .btn-hot span{
   display: none;
     font-size: 20px;
 }
-
+.btn-hot:hover{
+  background-color: #4e2c05;
+}
 .btn-hot:hover span{
   display: inline-block;
   font-size: 20px;
 }
+
 /*VIAJES*/
 .btn-viaj span{
   display: none;
     font-size: 20px;
 }
-
+.btn-viaj:hover{
+  background-color: #1079aa;
+}
 .btn-viaj:hover span{
   display: inline-block;
   font-size: 20px;
 }
+
 /*SERVICIOS*/
 .btn-serv span{
   display: none;
     font-size: 20px;
 }
-
+.btn-serv:hover{
+  background-color: #07af39;
+}
 .btn-serv:hover span{
   display: inline-block;
   font-size: 20px;
 }
+
 /*REGISTRO*/
 .btn-reg span{
   display: none;
     font-size: 20px;
 }
-
+.btn-reg:hover{
+  background-color: #a113ad;
+}
 .btn-reg:hover span{
   display: inline-block;
   font-size: 20px;
 }
+
+/*ACÁ TERMINAN LAS PROPIEDADES DE LOS BOTONES DEL MENÚ CON HOVER*/
+
 .button:hover {
- 
-  background-color: #6d0c0c;
   width: 200px;
 }
 
