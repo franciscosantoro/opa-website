@@ -42,6 +42,7 @@ html, body {
     -ms-flex-align: start;
     align-items: flex-start;
 }
+/*FIN DEL CONTENEDOR ABSOLUTO*/
 
     .logo {
         width: 100%;
@@ -57,9 +58,15 @@ html, body {
         width: 300px;
         height: auto;
     }
+    .titulo {
+        -ms-flex-item-align: center;
+        align-self: center;
+        text-align: center;
+    }
 
     /*ESTE ES EL CONTENEDOR FLEXBOX QUE ENGLOBA AL MENU Y LOS PRODUCTOS*/
     .medio{
+        min-height: 800px;
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -75,6 +82,7 @@ html, body {
     }
     /*ACÁ VAN LAS PROPIEDADES DEL MENÚ, PERO TIENE SU CSS INDEPENDIENTE (menu.css)*/
         .productos {
+            background: rgb(24, 168, 173);
             width: auto;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -95,16 +103,11 @@ html, body {
                 text-align: center;
                 background-color: #6d6d6d;
             }
-
-    .titulo {
-        -ms-flex-item-align: center;
-        align-self: center;
-        text-align: center;
-    }
-
+    /*ACÁ TERMINA EL CONTENEDOR DEL MENU Y LOS PRODUCTOS*/
 
 
     .pie {
+        margin-bottom: 0px;
         margin-top: auto;
         height: 150px;
         background: #AD1818;

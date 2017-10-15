@@ -1,12 +1,13 @@
 .menu{
+  background: #07af39;
   white-space: nowrap;
-  width: 100px;
+  width: 150px;
   height: auto;
+  box-sizing: border-box;
 }
 nav {
   margin-top: auto;
   position: fixed;
-  width: 300px;
   text-align: left;
 }
 
