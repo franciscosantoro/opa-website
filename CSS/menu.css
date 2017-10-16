@@ -1,7 +1,6 @@
 .menu{
-  background: #07af39;
   white-space: nowrap;
-  width: 150px;
+  min-width: min-content;
   height: auto;
   box-sizing: border-box;
 }
@@ -53,12 +52,16 @@ nav li {
 /*ACÁ SE ESPECIFICA LA FORMA DE FUNCINAR DE LOS BOTONES CUANDO SE LES HACE "HOVER"*/
 
 /*HOME*/
+.btn-home{
+  border-radius: 0px 5px 0px 0px;
+}
 .btn-home span{
     display: none;
     font-size: 20px;
 }
 .btn-home:hover{
-  background-color: #19a391;
+  border-radius: 0px 0px 0px 0px;
+  background-color: #a31919;
 }
 .btn-home:hover span{
   display: inline-block;
@@ -71,7 +74,7 @@ nav li {
     font-size: 20px;
 }
 .btn-este:hover{
-  background-color: #c22b2b;
+  background-color: #bb6400;
 }
 .btn-este:hover span{
     display: inline-block;
@@ -84,7 +87,7 @@ nav li {
     font-size: 20px;
 }
 .btn-tl:hover{
-  background-color: #0f9da1;
+  background-color: #808d09;
 }
 .btn-tl:hover span{
   display: inline-block;
@@ -98,7 +101,7 @@ nav li {
     font-size: 20px;
 }
 .btn-hot:hover{
-  background-color: #4e2c05;
+  background-color: #2fa71f;
 }
 .btn-hot:hover span{
   display: inline-block;
@@ -111,7 +114,7 @@ nav li {
     font-size: 20px;
 }
 .btn-viaj:hover{
-  background-color: #1079aa;
+  background-color: #2383af;
 }
 .btn-viaj:hover span{
   display: inline-block;
@@ -124,7 +127,7 @@ nav li {
     font-size: 20px;
 }
 .btn-serv:hover{
-  background-color: #07af39;
+  background-color: #b448af;
 }
 .btn-serv:hover span{
   display: inline-block;
@@ -132,12 +135,16 @@ nav li {
 }
 
 /*REGISTRO*/
+.btn-reg{
+  border-radius: 0px 0px 5px 0px;
+}
 .btn-reg span{
   display: none;
     font-size: 20px;
 }
 .btn-reg:hover{
-  background-color: #a113ad;
+  border-radius: 0px 0px 0px 0px;
+  background-color: #70007a;
 }
 .btn-reg:hover span{
   display: inline-block;
