@@ -162,3 +162,17 @@ nav li {
   opacity: 1;
   right: 0;
 }
+
+@media only screen and (max-width: 1366px) {
+  .button {
+    /*cambia de tamaño para adaptarse */
+    height: 50px;
+    font-size: 25px;
+    padding-top: 7px;
+    padding-bottom:7px; 
+    width: 60px;
+  }
+  .button:hover  span{
+    font-size: 17px;
+  }
+}
