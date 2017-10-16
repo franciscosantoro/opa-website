@@ -51,7 +51,11 @@ html, body {
         background-image: url(../images/fondo.jpg);
         box-shadow: 0 5px 6px 0px rgba(59, 59, 59, 0.911);
     }
-
+    .logo .linea{
+        background-image: linear-gradient(to left, #5F5E5E, #6D6C6C, #5F5E5E);
+        width: 100%;
+        height: 1px;
+    }
     .logo img {
         display: block;
         margin-left: auto;
