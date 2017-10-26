@@ -17,6 +17,7 @@ nav li {
 }
 
 .button {
+  /**/
   background-color: #444444;
   border: none;
   color: #FFFFFF;
@@ -164,7 +165,7 @@ nav li {
 
 @media only screen and (max-width: 1366px) {
   .button {
-    /*cambia de tamaño del menu para adaptarse */
+    /*cambia de tamaño para adaptarse */
     height: 50px;
     font-size: 25px;
     padding-top: 7px;
