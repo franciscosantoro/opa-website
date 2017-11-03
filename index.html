@@ -5,15 +5,19 @@
 
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>oPa!</title>
+        <title>oPa!</title>
     <link rel="stylesheet" type="text/css" href="CSS/main.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/form.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/modal.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/producto.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/menu.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/font-awesome.css">
+
+     <link rel="stylesheet" href="CSS/estilos.css">
+      <script src="js/jquery-3.1.0.min.js"></script>
+      <script src="js/main.js"></script>
 
 
 </head>
@@ -25,10 +29,65 @@
         <div class="contenedor"> <!--ACÁ EMPIEZA EL CONTENEDOR PATA TODO EL FLEXBOX DE LA PÁGINA-->
 
                 <div class="logo">
-                    <img src="images/opa!.png">
-                    <div class="linea"></div>
+                    <img src="images/logo2.jpg">
                 </div>
             
+
+            <div class="slideshow">
+             <ul class="slider">
+
+                <li>
+                    <img src="images/1.jpg">
+                    <section class="caption">
+                        <h2>Titulo slider</h2>
+                        <p>1
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <img src="images/2.jpg" alt="">
+                    <section class="caption">
+                        2
+                    </section>
+                </li>
+                <li>
+                    <img src="images/3.jpg" alt="">
+                    <section class="caption">
+                        3
+                    </section>
+                </li>
+                <li>
+                    <img src="images/4.jpg" alt="">
+                    <section class="caption">
+                        4
+                    </section>
+                </li>
+             </ul>
+
+             <!--<ol class="pagination">
+                <li><span class="fa fa-circle"></span></li>
+                <li>
+                    <span class="fa fa-circle"></span>
+                </li>
+                <li>
+                    <span class="fa fa-circle"></span>
+                </li>
+                <li>
+                    <span class="fa fa-circle"></span>
+                </li>
+
+             </ol>-->
+
+             <div class="left">
+                 <span class="fa fa-chevron-left">
+                 </span>
+             </div>
+             <div class="right">
+                 <span class="fa fa-chevron-right">
+                 </span>
+             </div>
+
+            </div>
             
    <!--ACÁ EMPIEZA EL FORMULARIO DE REGISTRO (no se ve hasta ejecutarlo)-->
 
@@ -305,48 +364,70 @@
     
 <!--ACA EMPIEZA EL FOOTER, SIGUE DENTRO DEL "CONTENEDOR"-->
     <div class="pie">
-            <section>
                 <div class="columnaredes">
-                    <li>
+                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                   <!-- <li>
                         <a href=""><img src="images\instagram.png"></a>
                     </li>
                     <li>
                         <a href=""><img src="images\twitter.png"></a>
                     </li>
                     <li>
-                        <a href=""><img src="images\face.png"></a>
-                    </li>
+                        <i class="fa-facebook"></i>
+                    </li>-->
+                    <div class="logopie">
+                    <a href=""><img src="images\logo2pie.jpg"></a>
                 </div>
+
+                 <div class="tarjetas">
+                    <h5>En OPA aceptamos</h5>
+                    <img src="images\creditel.jpg">
+                    <img src="images\abitab.jpg">
+                    <img src="images\oca.jpg">
+                    <img src="images\cabal.jpg">
+                    <img src="images\bbva.jpg">
+                    <img src="images\visa.jpg">
+                    <img src="images\mastercard.jpg">
+                    
+                </div>
+
+                </div>
+
+                
+
+                <div class="listas">
                 <div class="columnasfoot">
                     <ul>
-                        <h5>Encontrá lo que buscás!</h5>
-                        <li>Ofertas del Día</li>
-                        <li>Estética y bienestar</li>
-                        <li>Restaurantes para hoy</li>
-                        <li>Viajes</li>
+                        <h4>Encontrá lo que buscás!</h4>
+                        <li><a href="">Ofertas del Día</a></li>
+                        <li><a href="">Estética y bienestar</a></li>
+                        <li><a href="">Restaurantes para hoy</a></li>
+                        <li><a href="">Viajes</a></li>
                     </ul>
                 </div>
     
                 <div class="columnasfoot">
                     <ul>
-                        <h5>Sobre Nosotros</h5>
-                        <li>Quienes somos</li>
-                        <li>Contacto</li>
-                        <li>Trabaja con nosotros</li>
-                        <li>Política de Privacidad</li>
-                    </ul>
+                        <h4>Sobre Nosotros</h4>
+                        <li><a href="">Quienes somos</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Trabaja con nosotros</a></li>
+                        <li><a href="">Política de Privacidad</a></li>
+                   </ul>
                 </div>
     
                 <div class="columnasfoot">
                     <ul>
-                        <h5>Contacto:</h5>
-                        <li>info@opa.com.uy</li>
-                        <li>(+598) 2408 7584</li>
-                        <li>Julio Herrera y Obes 1302 esq. Mercedes</li>
-                        <li>Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</li>
+                        <h4>Contacto:</h4>
+                        <li><a href="">info@opa.com.uy</a></li>
+                        <li><a href="">(+598) 2408 7584</a></li>
+                        <li><a href="">Julio Herrera y Obes 1302 esq. Mercedes</a></li>
+                        <li><a href="">Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</a></li>
                     </ul>
                 </div>
-            </section>
+            </div>
         </div>
 
 

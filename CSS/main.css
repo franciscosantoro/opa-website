@@ -115,30 +115,63 @@ html, body {
     .pie {
         margin-bottom: 0px;
         margin-top: auto;
-        height: 150px;
-        background: #AD1818;
+        margin-left: 150px;
+        height: 29%;
+        width: 100%;
+        background: #0c2f5f;
         color: #CCCCCC;
         text-align: center;
         padding: 10px;
         -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
         align-self: flex-end;
-        width: 100%;
+         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       /* justify-content: space-between;
+        width: 100%;*/
     }
 
-    .pie .columnasfoot {
-        width: 25%;
-        float: left;
-    }
+    ..listas{
 
-    .pie .columnasfoot ul li {
-        list-style-type: none;
-    }
-
-    .pie .columnaredes li {
-        list-style-type: none;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+    .columnasfoot {
+        width: 24%;
         float: right;
         margin: 10px;
+        display: flex;
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        justify-content: space-between;
+    }
+
+    .columnasfoot ul li{
+        list-style-type: none;
+         font-size: small; 
+         margin-top: 5px;
+         
+    }
+    .columnasfoot ul li a {
+       color: #ffffff;
+    }
+
+    .columnaredes i {
+        list-style-type: none;
+        margin-right: 30px;
+        color: #ffffff;
+
+    }
+
+.columnaredes{
+
+    margin-left: 70px;
+}
+
+    .tarjetas {
+     margin-top: 15px;
     }
 
 @media only screen and (max-width: 768px) {
