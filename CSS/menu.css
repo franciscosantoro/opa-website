@@ -6,7 +6,7 @@
 }
 nav {
   margin-top: auto;
-  position: fixed;
+  position: absolute;
   text-align: left;
 }
 
