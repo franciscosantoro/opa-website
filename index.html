@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>oPa!</title>
+    <title>oPa!</title>
     <link rel="stylesheet" type="text/css" href="CSS/main.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/form.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/modal.css" media="screen" />
@@ -25,8 +25,18 @@
 
         <div class="contenedor"> <!--ACÁ EMPIEZA EL CONTENEDOR PATA TODO EL FLEXBOX DE LA PÁGINA-->
 
-                <div class="logo">
-                    <img src="images/logo2.png">
+                <div class="cabecera"> <!--CONTENEDOR PARA EL HEADER, INCLUYE LOGO Y BUSCADOR (POR AHORA)-->
+
+                    <div class="logo">
+                        <img src="images/logo2.png">
+                    </div>
+                    
+                    <div class="buscador">
+                        <form class="search" method="get" action="">    
+                            <input class="search" type="text" name="q" placeholder="Buscar" onfocus="this.placeholder = ''" onblur="this.placeholder ='Buscar'">
+                        </form>
+                    </div>
+                    
                     <div class="linea"></div>
                 </div>
 
@@ -138,7 +148,7 @@
     
         </div>
 
-
+<!--ACÁ TERMINA EL FORMULARIO DE REGISTRO-->
 
 
 
