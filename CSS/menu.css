@@ -18,7 +18,7 @@ nav li {
 
 .button {
   /**/
-  background-color: #444444;
+  background-color: #212731;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -53,7 +53,7 @@ nav li {
 
 /*HOME*/
 .btn-home{
-  border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 3px 0px 0px;
 }
 .btn-home span{
     display: none;
@@ -136,7 +136,7 @@ nav li {
 
 /*REGISTRO*/
 .btn-reg{
-  border-radius: 0px 0px 5px 0px;
+  border-radius: 0px 0px 3px 0px;
 }
 .btn-reg span{
   display: none;
