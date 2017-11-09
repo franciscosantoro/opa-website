@@ -57,22 +57,33 @@ html, body {
         align-self: center;
         /*background-image: url(../images/fondo.jpg);*/
         background-color: #e48d1b;
-        box-shadow: 0 5px 6px 0px rgba(59, 59, 59, 0.911);
+        box-shadow: 0 2px 6px 0px rgba(59, 59, 59, 0.911);
     }
 
     .cabecera img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 300px;
+        width: 240px;
         height: auto;
     }
 
     .buscador{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 500px;
+    }
+    .lupa i {
+        font-size: 35px;
+        color: #ffffff;
+    }
+    .botones{
         width: 300px;
     }
     .buscador .search input[type=text] {
-        width: 250px;
+        width: 430px;
         height: 40px;
         text-align: left;
         box-sizing: border-box;
@@ -88,23 +99,30 @@ html, body {
         -moz-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
     }
+    
+    .buscador .search input[type=text]:focus {
+        width: 450px;
+        outline: none;
+        border: 0;
+        border: 1px solid #ffffffa9;
+    }
+
     /*ESTRA PARTE SE ENCARGA DE QUE LAS PALABRAS "QUE QUERÉS BUSCAR HOY" EN LA BARRA DE BUSQUEDA SE MANTENGAN EN  BLANCO*/
     ::-moz-placeholder { /* Firefox 19+ */
         color: #ffffff;
         opacity: 1;
       }
+      ::-moz-placeholder {  /* Firefox 19+ */
+        text-align: center;  
+     }
       ::-webkit-input-placeholder { /* Chrome */
         color: #ffffff;
       }
+      ::-webkit-input-placeholder {
+        text-align: center;
+     }
     
     /*MAS BLANCO QUE ARROZ SAMÁN (PD: A IE NO LE DOY SOPORTE)*/
-    
-    .buscador .search input[type=text]:focus {
-        width: 300px;
-        outline: none;
-        border: 0;
-        border: 1px solid #ffffffa9;
-    }
 
     .titulo {
         margin-top: 50px;
