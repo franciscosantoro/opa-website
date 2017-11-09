@@ -176,6 +176,9 @@ html, body {
                 background: #ffffff; 
                 /*background-color: #6d6d6d;*/
             }
+            .caja div img{
+                width: 100%;
+            }
     /*ACÁ TERMINA EL CONTENEDOR DEL MENU Y LOS PRODUCTOS*/
 
 
