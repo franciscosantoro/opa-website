@@ -65,8 +65,8 @@ html, body {
         width: 100%;
         -ms-flex-item-align: center;
         align-self: center;
-        /*background-image: url(../images/fondo.jpg);*/
-        background-color: #e48d1b;
+        background-image: url(../images/header.png);
+        /*background-color: #e48d1b;*/
         -webkit-box-shadow: 0 2px 6px 0px rgba(59, 59, 59, 0.911);
                 box-shadow: 0 2px 6px 0px rgba(59, 59, 59, 0.911);
     }
@@ -126,7 +126,7 @@ html, body {
         border: 1px solid #ffffffa9;
     }
 
-    /*ESTRA PARTE SE ENCARGA DE QUE LAS PALABRAS "QUE QUERÉS BUSCAR HOY" EN LA BARRA DE BUSQUEDA SE MANTENGAN EN  BLANCO*/
+    /*ESTRA PARTE SE ENCARGA DE QUE LAS PALABRAS "QUE QUERÉS BUSCAR HOY" EN LA BARRA DE BUSQUEDA SE MANTENGAN EN BLANCO*/
     ::-moz-placeholder { /* Firefox 19+ */
         color: #ffffff;
         opacity: 1;
