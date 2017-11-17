@@ -45,7 +45,7 @@
                     </div>
                     
                     <div class="botones">
-
+                        <span id="datos"> </span>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                 </div>
     
                 <div id="registrarse" class="tabcontent">
-                    <form id="regi" method="POST" onsubmit="registrarse()">
+                    <form id="regi" method="GET" onsubmit="registrarse()">
                         <ul class="form-style-1">
                             <li><label>Nombre completo <span class="required">*</span></label>
                                 <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" required  /></li>
@@ -98,17 +98,17 @@
     
                 </div>
                 <div id="iniciar" class="tabcontent">
-                    <form>
+                    <form id="login" method="POST"  onsubmit="login()" >
                         <ul class="form-style-1">
     
     
                             <li>
                                 <label>Nombre de usuario <span class="required">*</span></label>
-                                <input type="username" name="usrname" class="field-long" id="username" />
+                                <input type="username" name="usrname" class="field-long" id="username" required/>
                             </li>
                             <li>
                                 <label>Contraseña <span class="required">*</span></label>
-                                <input type="password" name="pass" class="field-long" id="password"/>
+                                <input type="password" name="pass" class="field-long" id="password"required/>
                             </li>
     
     

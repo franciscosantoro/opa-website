@@ -2,10 +2,8 @@ function login() {
         // Levanto los datos ingresados por el usuario
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-        if (username && password) {
-            if (localStorage.username == username){
+        if (localStorage.username == username && localStorage.password == password) {
                 // Validar password
-                if (localStorage.password = password) {
                     mostrarDatos();
                 }
             }
@@ -18,9 +16,9 @@ function login() {
 }
 
 function mostrarDatos() {
-    if ((localStorage.nombre != undefined) && (localStorage.password != undefined)) {
-        // Mostrar DAtos del usuario Logueado
-        document.getElementById("datos").innerHTML = "Nombre: " + localStorage.nombre;
+    if ((localStorage.username != undefined) && (localStorage.password != undefined)) {
+        // Mostrar Datos del usuario Logueado
+        document.getElementById("datos").innerHTML = "Nombre: " + localStorage.username;
     } 
 }
 
