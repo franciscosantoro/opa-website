@@ -45,7 +45,7 @@
                     </div>
                     
                     <div class="botones">
-                        <span id="datos"> </span>
+                        <div id="datos"> </div>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                 </div>
     
                 <div id="registrarse" class="tabcontent">
-                    <form id="regi" method="GET" onsubmit="registrarse()">
+                    <form id="regi" method="POST" onsubmit="registro();">
                         <ul class="form-style-1">
                             <li><label>Nombre completo <span class="required">*</span></label>
                                 <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" required  /></li>
@@ -76,11 +76,11 @@
     
                             <li>
                                 <label>Nombre de usuario <span class="required">*</span></label>
-                                <input type="username" name="field5" class="field-long" required />
+                                <input type="username" name="field5" class="field-long" id="nomregistro" required />
                             </li>
                             <li>
                                 <label>Contraseña <span class="required">*</span></label>
-                                <input type="password" name="field6" class="field-long" required />
+                                <input type="password" name="field6" class="field-long" id="passregistro" required />
                             </li>
                             <li>
                                 <label>Sexo</label>
@@ -98,7 +98,7 @@
     
                 </div>
                 <div id="iniciar" class="tabcontent">
-                    <form id="login" method="POST"  onsubmit="login()" >
+                    <form id="login" method="POST"  onsubmit="login();" >
                         <ul class="form-style-1">
     
     
@@ -426,7 +426,7 @@
 <script src="js/modal.js"></script>
 <script src="js/jquery-3.1.0.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/header.js"></script>
+<script src="js/login.js"></script>
 
     
 </body>

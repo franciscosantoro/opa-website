@@ -1,26 +1,28 @@
+function registro() {
+    var nomregistro = document.getElementById('nomregistro').value;
+    var passregistro = document.getElementById('passregistro').value;
+    
+    localStorage.setItem("username", nomregistro);
+    localStorage.setItem("password", passregistro);
+}
+
 function login() {
         // Levanto los datos ingresados por el usuario
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-        if (localStorage.username == username && localStorage.password == password) {
-                // Validar password
-                    mostrarDatos();
-                }
-            }
-            else {
-                mostrarError();
-                
-            }
         }
-        return true;
-}
+        
 
-function mostrarDatos() {
-    if ((localStorage.username != undefined) && (localStorage.password != undefined)) {
-        // Mostrar Datos del usuario Logueado
-        document.getElementById("datos").innerHTML = "Nombre: " + localStorage.username;
-    } 
-}
+
+function mostrarNombre() {
+    if (localStorage.username != undefined){
+    /*document.getElementById =('login').onsubmit = function(){
+        if (localStorage.username == username && localStorage.password == password){*/
+         document.getElementById("datos").innerHTML = username;
+        }
+            }
+         
+   
 
 function guardarDatos() {
     localStorage.nombre = document.getElementById("nombre").value;
@@ -28,5 +30,5 @@ function guardarDatos() {
 }
 
 function mostrarError() {
-    document.getElementById("error").innerHTML = "Usuario/Password invalido";
+    document.getElementById("datos").innerHTML = "Usuario/Password invalido";
 }
