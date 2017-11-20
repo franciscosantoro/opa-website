@@ -5,30 +5,30 @@ function registro() {
     localStorage.setItem("username", nomregistro);
     localStorage.setItem("password", passregistro);
 }
+var nombre;
 
 function login() {
         // Levanto los datos ingresados por el usuario
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
+        if (username != localStorage.username || password != localStorage.password){
+            alert ("usuario o contraseña incorrecto");
+
+        }
+        else{
+           nombre = username;
+           document.getElementById('login').submit();
+           return true;
+        }
         }
         
 
 
-function mostrarNombre() {
-    if (localStorage.username != undefined){
-    /*document.getElementById =('login').onsubmit = function(){
-        if (localStorage.username == username && localStorage.password == password){*/
-         document.getElementById("datos").innerHTML = username;
+window.onload = function mostrarNombre() {
+    if (nombre != undefined){
+         document.getElementById("datos").innerHTML = nombre;
+         return true;
         }
             }
          
    
-
-function guardarDatos() {
-    localStorage.nombre = document.getElementById("nombre").value;
-    localStorage.password = document.getElementById("password").value;
-}
-
-function mostrarError() {
-    document.getElementById("datos").innerHTML = "Usuario/Password invalido";
-}

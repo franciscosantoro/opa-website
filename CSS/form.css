@@ -44,11 +44,8 @@ select{
 }
 .form-style-1 .field-divided{
     width: 49%;
-    background-color: rgb(63, 63, 63);
 }
-.form-style-1 .field-divided :-moz-placeholder{
-    color: #2b2b2b;
-}
+
 
 .form-style-1 .field-long{
     width: 100%;
@@ -59,13 +56,15 @@ select{
 .form-style-1 .field-textarea{
     height: 100px;
 }
-.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+.form-style-1 .submit, .form-style-1 input[type=button]{
+    width: 70px;
     background: #4B99AD;
     padding: 8px 15px 8px 15px;
     border: none;
     color: #fff;
+    text-align: center;
 }
-.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+.form-style-1 .submit:hover, .form-style-1 input[type=button]:hover{
     background: #4691A4;
     box-shadow:none;
     -moz-box-shadow:none;
