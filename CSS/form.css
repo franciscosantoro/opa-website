@@ -44,6 +44,10 @@ select{
 }
 .form-style-1 .field-divided{
     width: 49%;
+    background-color: rgb(63, 63, 63);
+}
+.form-style-1 .field-divided :-moz-placeholder{
+    color: #2b2b2b;
 }
 
 .form-style-1 .field-long{
@@ -81,6 +85,7 @@ div.tab {
 
 /* Style the buttons inside the tab */
 div.tab button {
+    color: #2b2b2b;
     background-color: inherit;
     float: left;
     border: none;
