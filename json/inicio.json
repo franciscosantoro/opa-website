@@ -1,6 +1,6 @@
 {
   "persona": {
-    "usuario": "\"francisco\"",
-    "contraseña": "\"coso\""
+    "username": "francisco",
+    "password": "coso1"
   }
 }

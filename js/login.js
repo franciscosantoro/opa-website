@@ -4,8 +4,8 @@ ourRequest.onload = function(){
     console.log(ourRequest.responseText);
 };
 ourRequest.send();*/
- /* localStorage.setItem("username", nomregistro);
-    localStorage.setItem("password", passregistro);*/
+/* localStorage.setItem("username", nomregistro);
+   localStorage.setItem("password", passregistro);*/
 
 function registro() {
     var nomregistro = document.getElementById('nomregistro').value;
@@ -13,39 +13,49 @@ function registro() {
     $.ajax({
         type: 'POST',
         url: 'http://localhost:3000/persona',
-        data: { usuario: JSON.stringify(nomregistro), contraseña: JSON.stringify(passregistro) },
-        success: function () {document.getElementById("cerrate").click();},
-        failure: function() {alert("Error!");}
-    }); 
+        data: {
+            username: (nomregistro),
+            password: (passregistro)
+        },
+        success: function () {
+            document.getElementById("cerrate").click();
+        },
+        failure: function () {
+            alert("Error!");
+        }
+    });
 }
-var nombre;
 
 function login() {
-    var login = new XMLHttpRequest();
-    login.open('GET', 'http://localhost:3000/persona');
-    login.onload = function(){
-        console.log(login.responseText);
-    };
-        // Levanto los datos ingresados por el usuario
+    //cargo los datos del json en una variable
+    var usuario = $.ajax({
+        type: "GET",
+        dataType : 'json',
+        url: 'http://localhost:3000/persona',
+        success: function(){
+            // Levanto los datos ingresados por el usuario
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-        if (username != localStorage.username || password != localStorage.password){
-            alert ("usuario o contraseña incorrecto");
+        //comparo los datos del json con los del usuario
+        if (username != usuario.username || password != usuario.password) {
+            alert("usuario o contraseña incorrecto");
+            mostrarNombre();
 
+        } else {
+            
+            return true;
         }
-        else{
-           nombre = username;
-           mostrarNombre();
-           return true;
+    }
         }
-        }
+        
+    });
+    
         
 
 
+
 function mostrarNombre() {
-    if (nombre != undefined){
-         document.getElementById("datos").innerHTML = nombre;
-        }
-            }
-         
-   
+    if (nombre != undefined) {
+        document.getElementById("datos").innerHTML = usuario.nombre;
+    }
+}
