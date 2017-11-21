@@ -15,384 +15,642 @@
     <link rel="stylesheet" type="text/css" href="CSS/menu.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/font-awesome.css">
     <link rel="stylesheet" href="CSS/slider.css">
-      
+
 
 </head>
-        
 
-<body> 
 
-        <div class="contenedor"> <!--ACÁ EMPIEZA EL CONTENEDOR PATA TODO EL FLEXBOX DE LA PÁGINA-->
+<body>
 
-                <div class="cabecera"> <!--CONTENEDOR PARA EL HEADER, INCLUYE LOGO Y BUSCADOR (POR AHORA)-->
+    <div class="contenedor">
+        <!--ACÁ EMPIEZA EL CONTENEDOR PATA TODO EL FLEXBOX DE LA PÁGINA-->
 
-                    <div class="logo">
-                        <img src="images/logo2.png">
-                    </div>
-                    
-                    <div class="buscador">
+        <div class="cabecera">
+            <!--CONTENEDOR PARA EL HEADER, INCLUYE LOGO Y BUSCADOR (POR AHORA)-->
 
-                        <div class="lupa">
-                            <i class="fa fa-search" aria-hidden="true">&nbsp</i>
-                        </div>
+            <div class="logo">
+                <img src="images/logo2.png">
+            </div>
 
-                        <div class="barra">
-                                <form class="search" method="get" action="">    
-                                        <input class="search" type="text" name="q" placeholder="¿Que querés encontrar hoy?" onfocus="this.placeholder = ''" onblur="this.placeholder ='¿Que querés encontrar hoy?'">
-                                    </form>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="botones">
+            <div class="buscador">
 
-                        <div id="datos"> </div>
-
-                        <div class="btn-cab">
-                                <i class="fa fa-envelope" aria-hidden="true"></i> 
-                        </div>
-
-                        <div class="btn-cab">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </div>
-                        
-                    </div>
+                <div class="lupa">
+                    <i class="fa fa-search" aria-hidden="true">&nbsp</i>
                 </div>
 
-            
+                <div class="barra">
+                    <form class="search" method="get" action="">
+                        <input class="search" type="text" name="q" placeholder="¿Que querés encontrar hoy?" onfocus="this.placeholder = ''" onblur="this.placeholder ='¿Que querés encontrar hoy?'">
+                    </form>
+                </div>
 
-   <!--ACÁ EMPIEZA EL FORMULARIO DE REGISTRO (no se ve hasta ejecutarlo)-->
+            </div>
 
-   <div id="myModal" class="modal">
-    
-            
+            <div class="botones">
+
+                <div id="datos"> </div>
+
+                <div class="btn-cab">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+
+                <div class="btn-cab">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!--ACÁ EMPIEZA EL FORMULARIO DE REGISTRO (no se ve hasta ejecutarlo)-->
+
+        <div id="myModal" class="modal">
+
+
             <div class="modal-content">
                 <span class="close" id="cerrate">&times;</span>
-    
+
                 <div class="tab">
                     <button id="clicktab" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</button>
                     <button class="tablinks" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
                 </div>
-    
+
                 <div id="registrarse" class="tabcontent">
                     <form id="regi">
                         <ul class="form-style-1">
-                            <li><label>Nombre completo <span class="required">*</span></label>
-                                <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" required  /></li>
                             <li>
-                                <label>Email <span class="required">*</span></label>
+                                <label>Nombre completo
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;
+                                <input type="text" name="field2" class="field-divided" placeholder="Apellido" required
+                                />
+                            </li>
+                            <li>
+                                <label>Email
+                                    <span class="required">*</span>
+                                </label>
                                 <input type="email" name="field3" class="field-long" required />
                             </li>
-    
+
                             <li>
-                                <label>Nombre de usuario <span class="required">*</span></label>
+                                <label>Nombre de usuario
+                                    <span class="required">*</span>
+                                </label>
                                 <input type="username" name="field5" class="field-long" id="nomregistro" required />
                             </li>
                             <li>
-                                <label>Contraseña <span class="required">*</span></label>
+                                <label>Contraseña
+                                    <span class="required">*</span>
+                                </label>
                                 <input type="password" name="field6" class="field-long" id="passregistro" required />
                             </li>
                             <li>
                                 <label>Sexo</label>
                                 <select name="field4" class="field-select">
-                                                            <option value="Partnership">Masculino</option>
-                                                            <option value="General Question">Femenino</option>
-                                                            </select>
+                                    <option value="Partnership">Masculino</option>
+                                    <option value="General Question">Femenino</option>
+                                </select>
                             </li>
-    
+
                             <li>
-                                <input type="button" class="submit" value="Enviar" onclick="registro();"/>
+                                <input type="button" class="submit" value="Enviar" onclick="registro();" />
                             </li>
                         </ul>
                     </form>
-    
+
                 </div>
                 <div id="iniciar" class="tabcontent">
                     <form id="login" method="POST">
                         <ul class="form-style-1">
-    
-    
+
+
                             <li>
-                                <label>Nombre de usuario <span class="required">*</span></label>
+                                <label>Nombre de usuario
+                                    <span class="required">*</span>
+                                </label>
                                 <input type="username" name="usrname" class="field-long" id="username" required/>
                             </li>
                             <li>
-                                <label>Contraseña <span class="required">*</span></label>
-                                <input type="password" name="pass" class="field-long" id="password"required/>
+                                <label>Contraseña
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="password" name="pass" class="field-long" id="password" required/>
                             </li>
-    
-    
+
+
                             <li>
-                                <input type="button" class="submit" value="Iniciar"  onclick= "login();" />
+                                <input type="button" class="submit" value="Iniciar" onclick="login();" />
                             </li>
                         </ul>
                     </form>
                 </div>
-    
+
             </div>
-    
+
         </div>
 
-<!--ACÁ TERMINA EL FORMULARIO DE REGISTRO-->
+        <!--ACÁ TERMINA EL FORMULARIO DE REGISTRO-->
 
 
 
         <div class="titulo">
-            <h4 >Ofertas del día</h4>
+            <h4>Ofertas del día</h4>
         </div>
 
-    <div class="medio"> <!--CONTENEDOR DEL MENU Y LOS PRODUCTOS-->
-        
+        <div class="medio">
+            <!--CONTENEDOR DEL MENU Y LOS PRODUCTOS-->
+
             <!--ACÁ VA EL MENÚ-->
-        
+
 
             <div class="menu">
-                    <nav>
-                        <ul>
-                            <li><a href="quienessomos.html"><button class="button btn-home"><i class="fa fa-home"></i><span> &nbsp Home</span></button></a></li>
-                            <li><a href="quienessomos.html"><button class="button btn-este"><i class="fa fa-scissors"></i><span> &nbsp Estétca</span></button></a></li>
-                            <li><a href="quienessomos.html"><button class="button btn-tl"><i class="fa fa-futbol-o"></i><span> &nbsp Tiempo Libre</span></button></a></li>
-                            <li><a href="quienessomos.html"><button class="button btn-hot"><i class="fa fa-bed"></i><span> &nbsp Hoteles</span></button></a></li>
-                            <li><a href="quienessomos.html"><button class="button btn-viaj"><i class="fa fa-plane"></i><span> &nbsp Viajes</span></button></a></li>
-                            <li><a href="quienessomos.html"><button class="button btn-serv"><i class="fa fa-coffee"></i><span> &nbsp Servicios</span></button></a></li>
-                            <li><a id="myBtn"><button class="button btn-reg"><i class="fa fa-user"></i><span> &nbsp Registro</span></button></a></li>
-                        </ul>
-        
-                    </nav>
-                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="quienessomos.html">
+                                <button class="button btn-home">
+                                    <i class="fa fa-home"></i>
+                                    <span> &nbsp Home</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quienessomos.html">
+                                <button class="button btn-este">
+                                    <i class="fa fa-scissors"></i>
+                                    <span> &nbsp Estétca</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quienessomos.html">
+                                <button class="button btn-tl">
+                                    <i class="fa fa-futbol-o"></i>
+                                    <span> &nbsp Tiempo Libre</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quienessomos.html">
+                                <button class="button btn-hot">
+                                    <i class="fa fa-bed"></i>
+                                    <span> &nbsp Hoteles</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quienessomos.html">
+                                <button class="button btn-viaj">
+                                    <i class="fa fa-plane"></i>
+                                    <span> &nbsp Viajes</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quienessomos.html">
+                                <button class="button btn-serv">
+                                    <i class="fa fa-coffee"></i>
+                                    <span> &nbsp Servicios</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="myBtn">
+                                <button class="button btn-reg">
+                                    <i class="fa fa-user"></i>
+                                    <span> &nbsp Registro</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
 
-<!--ACÁ EMPEZAN LOS PRODUCTOS-->
-        <div class="centrar-productos">
-            <div class="productos">
+                </nav>
+            </div>
 
-    
-                <div class="caja">
-                
-                        
-                            <div class="img-prod">			
-                                <img src="images/products/1.jpg" alt="Img" />
-                            </div>
+            <!--ACÁ EMPEZAN LOS PRODUCTOS-->
+            <div class="centrar-productos">
+                <div class="productos">
 
-                            <div class="datos-prod">
-                            <h2>Un perfume</h2>
+
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
                             <h3>1.399€</h3>
-                            </div>
-                            
-                            <div class="detalles-prod">
-                                <div>
-                                    <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
-                                    
-                                    <div class="botones-prod">
+                        </div>
+
+                        <div class="detalles-prod">
+                            <div>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
 
                                     <div class="add-carrito">
-                                         <span><i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
-                                    </div>	
-                                    <div class="ver-mas"> 
-                                        <span><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
-                                    </div>			
-                                </div>
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
-                </div>
-                <div class="caja">
-                
-                        
-                            <div>			
-                                <img src="images/products/2.jpg" alt="Img" />
-                            </div>
-                            <span>Product title</span>
-                            <span>1.399€</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
                             <div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span><i></i> Add to cart</span>				
-                                    <span><i></i> View more</span>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
-                </div>
-                <div class="caja">
-                
-                        
-                            <div>			
-                                <img src="images/products/3.jpg" alt="Img" />
-                            </div>
-                            <span>Product title</span>
-                            <span>1.399€</span>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
                             <div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span><i></i> Add to cart</span>				
-                                    <span><i></i> View more</span>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
-                </div>
-                <div class="caja">
-                
-                        
-                            <div>			
-                                <img src="images/products/2.jpg" alt="Img" />
-                            </div>
-                            <span>Product title</span>
-                            <span>1.399€</span>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
                             <div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span><i></i> Add to cart</span>				
-                                    <span><i></i> View more</span>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
-                </div>
-                <div class="caja">
-                
-                        
-                            <div>			
-                                <img src="images/products/1.jpg" alt="Img" />
-                            </div>
-                            <span>Product title</span>
-                            <span>1.399€</span>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
                             <div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span><i></i> Add to cart</span>				
-                                    <span><i></i> View more</span>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
-                </div>
-                <div class="caja">
-                
-                        
-                            <div>			
-                                <img src="images/products/2.jpg" alt="Img" />
-                            </div>
-                            <span>Product title</span>
-                            <span>1.399€</span>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
                             <div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span><i></i> Add to cart</span>				
-                                    <span><i></i> View more</span>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
-                </div>
-                <div class="caja">
-                
-                        
-                            <div>			
-                                <img src="images/products/3.jpg" alt="Img" />
-                            </div>
-                            <span>Product title</span>
-                            <span>1.399€</span>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
                             <div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span><i></i> Add to cart</span>				
-                                    <span><i></i> View more</span>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
-                </div>
-                <div class="caja">
-                
-                        
-                            <div>			
-                                <img src="images/products/1.jpg" alt="Img" />
-                            </div>
-                            <span>Product title</span>
-                            <span>1.399€</span>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
                             <div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span><i></i> Add to cart</span>				
-                                    <span><i></i> View more</span>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
-                </div>
-                <div class="caja">
-                
-                        
-                            <div>			
-                                <img src="images/products/2.jpg" alt="Img" />
-                            </div>
-                            <span>Product title</span>
-                            <span>1.399€</span>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
                             <div>
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
-                                    <span><i></i> Add to cart</span>				
-                                    <span><i></i> View more</span>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
                                 </div>
                             </div>
-                        
-                    
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
+                            <div>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
+                            <div>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
                 </div>
-               
-                
+
             </div>
-        
         </div>
-    </div>
         <!--ACÁ EMPIEZA EL SLIDER-->
         <div class="slideshow">
-                <ul class="slider">
-    
-                   <li>
-                       <img src="images/1.jpg">
-    
-                   </li>
-                   <li>
-    
-                       <img src="images/2.jpg" alt="">
-                       
-                   </li>
-                   <li>
-                       <img src="images/3.jpg" alt="">
-                       
-                   </li>
-                   <li>
-                       <img src="images/4.jpg" alt="">
-                      
-                   </li>
-                </ul>
-    
-                <div class="left">
-                    <span class="fa fa-chevron-left">
-                    </span>
-                </div>
-                <div class="right">
-                    <span class="fa fa-chevron-right">
-                    </span>
-                </div>
-    
-               </div>
+            <ul class="slider">
+
+                <li>
+                    <img src="images/1.jpg">
+
+                </li>
+                <li>
+
+                    <img src="images/2.jpg" alt="">
+
+                </li>
+                <li>
+                    <img src="images/3.jpg" alt="">
+
+                </li>
+                <li>
+                    <img src="images/4.jpg" alt="">
+
+                </li>
+            </ul>
+
+            <div class="left">
+                <span class="fa fa-chevron-left">
+                </span>
+            </div>
+            <div class="right">
+                <span class="fa fa-chevron-right">
+                </span>
+            </div>
+
+        </div>
         <!--ACÁ TERMINA EL SLIDER-->
 
-<!--ACA EMPIEZA EL FOOTER, SIGUE DENTRO DEL "CONTENEDOR"-->
-    <div class="pie">
-                <div class="columnaredes">
+        <!--ACA EMPIEZA EL FOOTER, SIGUE DENTRO DEL "CONTENEDOR"-->
+        <div class="pie">
+            <div class="columnaredes">
                 <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
                 <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
                 <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
-                
+
                 <div class="logopie">
-                    <a href=""><img src="images\logo2pie.png"></a>
+                    <a href="">
+                        <img src="images\logo2pie.png">
+                    </a>
                 </div>
 
-                 <div class="tarjetas">
+                <div class="tarjetas">
                     <h5>En OPA aceptamos</h5>
                     <img src="images\creditel.jpg">
                     <img src="images\abitab.jpg">
@@ -401,57 +659,82 @@
                     <img src="images\bbva.jpg">
                     <img src="images\visa.jpg">
                     <img src="images\mastercard.jpg">
-                    
-                </div>
 
                 </div>
 
-                
+            </div>
 
-                <div class="listas">
+
+
+            <div class="listas">
                 <div class="columnasfoot">
                     <ul>
                         <h4>Encontrá lo que buscás!</h4>
-                        <li><a href="">Ofertas del Día</a></li>
-                        <li><a href="">Estética y bienestar</a></li>
-                        <li><a href="">Restaurantes para hoy</a></li>
-                        <li><a href="">Viajes</a></li>
+                        <li>
+                            <a href="">Ofertas del Día</a>
+                        </li>
+                        <li>
+                            <a href="">Estética y bienestar</a>
+                        </li>
+                        <li>
+                            <a href="">Restaurantes para hoy</a>
+                        </li>
+                        <li>
+                            <a href="">Viajes</a>
+                        </li>
                     </ul>
                 </div>
-    
+
                 <div class="columnasfoot">
                     <ul>
                         <h4>Sobre Nosotros</h4>
-                        <li><a href="">Quienes somos</a></li>
-                        <li><a href="">Contacto</a></li>
-                        <li><a href="">Trabaja con nosotros</a></li>
-                        <li><a href="">Política de Privacidad</a></li>
-                   </ul>
+                        <li>
+                            <a href="">Quienes somos</a>
+                        </li>
+                        <li>
+                            <a href="">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="">Trabaja con nosotros</a>
+                        </li>
+                        <li>
+                            <a href="">Política de Privacidad</a>
+                        </li>
+                    </ul>
                 </div>
-    
+
                 <div class="columnasfoot">
                     <ul>
                         <h4>Contacto:</h4>
-                        <li><a href="">info@opa.com.uy</a></li>
-                        <li><a href="">(+598) 2408 7584</a></li>
-                        <li><a href="">Julio Herrera y Obes 1302 esq. Mercedes</a></li>
-                        <li><a href="">Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</a></li>
+                        <li>
+                            <a href="">info@opa.com.uy</a>
+                        </li>
+                        <li>
+                            <a href="">(+598) 2408 7584</a>
+                        </li>
+                        <li>
+                            <a href="">Julio Herrera y Obes 1302 esq. Mercedes</a>
+                        </li>
+                        <li>
+                            <a href="">Lunes a Viernes de 9 a 18hs y Sábados de 10 a 15hs.</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
 
 
-    </div> <!--ACÁ TERMINA EL CONTENEDOR PARA FLEXBOX DE TODA LA PÁGINA-->
+    </div>
+    <!--ACÁ TERMINA EL CONTENEDOR PARA FLEXBOX DE TODA LA PÁGINA-->
 
     <!--ACÁ SE CARGAN LOS SCRIPT (ABIERTO A MODIFICACIONES)-->
-<script src="js/modal.js"></script>
-<script src="js/jquery-3.1.0.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/login.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
 
-    
+
 </body>
 
- 
+
 </html>

@@ -207,6 +207,7 @@ html, body {
 
             .caja {
                 width: 270px;
+                height: 400px;
                 /*border: 1px solid #7a7a7a;*/
                 border-radius: 10px;
                 text-align: center;
@@ -232,14 +233,16 @@ html, body {
                 background: #c42a2a;
                 width: 50%;
                 height: 100%;
-                padding: 5px;
+                padding: 10px;
+                border-bottom-left-radius: 10px;
             }
             .ver-mas{
                 color: #ffffff;
                 background: #2a72c4;
                 width: 50%;
                 height: 100%;
-                padding: 5px;
+                padding: 10px;
+                border-bottom-right-radius: 10px;
             }
     /*ACÁ TERMINA EL CONTENEDOR DEL MENU Y LOS PRODUCTOS*/
 
