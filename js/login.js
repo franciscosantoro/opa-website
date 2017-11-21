@@ -24,7 +24,7 @@ function login() {
         
 
 
-window.onload = function mostrarNombre() {
+function mostrarNombre() {
     if (nombre != undefined){
          document.getElementById("datos").innerHTML = nombre;
          return true;
