@@ -57,7 +57,7 @@
     
             
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close" id="cerrate">&times;</span>
     
                 <div class="tab">
                     <button id="clicktab" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</button>
@@ -65,7 +65,7 @@
                 </div>
     
                 <div id="registrarse" class="tabcontent">
-                    <form id="regi" method="POST" onsubmit="registro();">
+                    <form id="regi">
                         <ul class="form-style-1">
                             <li><label>Nombre completo <span class="required">*</span></label>
                                 <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" required  /></li>
@@ -91,7 +91,7 @@
                             </li>
     
                             <li>
-                                <input class="submit" value="Enviar" />
+                                <input type="button" class="submit" value="Enviar" onclick="registro();"/>
                             </li>
                         </ul>
                     </form>
@@ -113,7 +113,7 @@
     
     
                             <li>
-                                <input class="submit" value="Iniciar"  onclick= "login();" />
+                                <input type="button" class="submit" value="Iniciar"  onclick= "login();" />
                             </li>
                         </ul>
                     </form>

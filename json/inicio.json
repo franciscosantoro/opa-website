@@ -1,1 +1,6 @@
- 
+{
+  "persona": {
+    "usuario": "\"francisco\"",
+    "contraseña": "\"coso\""
+  }
+}
