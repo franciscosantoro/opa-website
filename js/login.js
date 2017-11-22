@@ -10,6 +10,7 @@ ourRequest.send();*/
 function registro() {
     var nomregistro = document.getElementById('nomregistro').value;
     var passregistro = document.getElementById('passregistro').value;
+    alert ("dsuvysvidsvcdsivi!!!!!!1")
     $.ajax({
         type: 'POST',
         url: 'http://localhost:3000/persona',
