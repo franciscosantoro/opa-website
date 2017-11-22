@@ -57,7 +57,7 @@ select{
     height: 100px;
 }
 .form-style-1 .submit, .form-style-1 input[type=button]{
-    width: 70px;
+    width: 90px;
     background: #4B99AD;
     padding: 8px 15px 8px 15px;
     border: none;

@@ -77,13 +77,14 @@
                 </div>
 
                 <div id="registrarse" class="tabcontent">
-                    <form id="regi">
+                    <form id="regi" onsubmit="registro(); return false">
                         <ul class="form-style-1">
                             <li>
                                 <label>Nombre completo
                                     <span class="required">*</span>
                                 </label>
                                 <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" required/>
+                                
                             </li>
                             <li>
                                 <label>Email
@@ -113,7 +114,7 @@
                             </li>
 
                             <li>
-                                <input type="button" class="submit" value="Enviar" onclick= "registro()"/>
+                                <input type="submit"  class="submit" value="Registrarse"/>
                             </li>
                         </ul>
                     </form>
@@ -730,7 +731,6 @@
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/login.js"></script>
-
 
 </body>
 
