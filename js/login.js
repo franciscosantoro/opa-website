@@ -24,25 +24,35 @@ $("#regi").submit ( function registro(event) {
             failure: function() {alert("Error!");}
     
         }); 
-    
+    return false;
     }
 );
 
-var usuario;
 
-$("#login").submit ( function login() {
+
+$("#login").submit( function() {
+    var usuario;
     //cargo los datos del json en una variable
     $.ajax({
         type: "GET",
-        async: false,
         dataType : 'json',
         url: 'http://localhost:3000/usuario',
-        success: function(data){
-            usuario = data;
-            usuario = JSON.parse;
-            alert(usuario);
-        }
+        }).done(function(data){
+        usuario = data;
+        alert(usuario.username);
     });
+
+ return false;       
+}
+);
+
+/*function mostrarNombre() {
+    if (nombre != undefined) {
+        document.getElementById("datos").innerHTML = usuario.nombre;
+    }
+}*/
+
+
 /*
             // Levanto los datos ingresados por el usuario
 
@@ -56,12 +66,3 @@ $("#login").submit ( function login() {
             mostrarNombre();
 
         } else {}  */
-        
-}
-);
-
-/*function mostrarNombre() {
-    if (nombre != undefined) {
-        document.getElementById("datos").innerHTML = usuario.nombre;
-    }
-}*/
