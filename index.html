@@ -77,7 +77,7 @@
                 </div>
 
                 <div id="registrarse" class="tabcontent">
-                    <form id="regi" onsubmit="registro(); return false">
+                    <form id="regi" method="post">
                         <ul class="form-style-1">
                             <li>
                                 <label>Nombre completo
@@ -121,7 +121,8 @@
 
                 </div>
                 <div id="iniciar" class="tabcontent">
-                    <form id="login" method="POST">
+
+                    <form id="login" method="post">
                         <ul class="form-style-1">
 
 
@@ -140,7 +141,7 @@
 
 
                             <li>
-                                <input type="button" class="submit" value="Iniciar" onclick="login();" />
+                                <input type="submit" class="submit" value="Iniciar"/>
                             </li>
                         </ul>
                     </form>

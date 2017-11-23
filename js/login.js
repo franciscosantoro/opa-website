@@ -1,14 +1,8 @@
-/*var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'http://localhost:3000/persona');
-ourRequest.onload = function(){
-    console.log(ourRequest.responseText);
-};
-ourRequest.send();*/
-/* localStorage.setItem("username", nomregistro);
-   localStorage.setItem("password", passregistro);*/
+//formulario de registro, guarda el usuario y la contraseña en un archivo json
+$("#regi").submit ( function registro(event) {
 
-   function registro() {
-    
+        event.preventDefault();
+
         var nomregistro = document.getElementById('nomregistro').value;
     
         var passregistro = document.getElementById('passregistro').value;
@@ -32,36 +26,42 @@ ourRequest.send();*/
         }); 
     
     }
+);
 
-function login() {
+var usuario;
+
+$("#login").submit ( function login() {
     //cargo los datos del json en una variable
-    var usuario = $.ajax({
+    $.ajax({
         type: "GET",
+        async: false,
         dataType : 'json',
         url: 'http://localhost:3000/usuario',
-        success: function(){
+        success: function(data){
+            usuario = data;
+            usuario = JSON.parse;
+            alert(usuario);
+        }
+    });
+/*
             // Levanto los datos ingresados por el usuario
+
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
+
         //comparo los datos del json con los del usuario
+
         if (username != usuario.username || password != usuario.password) {
             alert("usuario o contraseña incorrecto");
             mostrarNombre();
 
-        } else {
-            
-            return true;
-        }
-    }
-        
-    });
-    
+        } else {}  */
         
 }
+);
 
-
-function mostrarNombre() {
+/*function mostrarNombre() {
     if (nombre != undefined) {
         document.getElementById("datos").innerHTML = usuario.nombre;
     }
-}
+}*/
