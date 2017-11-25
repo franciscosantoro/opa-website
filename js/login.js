@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    if (localStorage.getItem("logueado") != null){
+        document.getElementById("datos").innerHTML = localStorage.getItem("logueado");
+    }
+});
+
 //formulario de registro, guarda el usuario y la contraseña en un archivo json
 $("#regi").submit ( function registro(event) {
 
@@ -39,13 +45,22 @@ $("#login").submit( function() {
         url: 'http://localhost:3000/usuario',
         }).done(function(data){
         usuario = data;
-        alert(usuario.username);
+        if (document.getElementById('username').value === usuario.username && document.getElementById('password').value === usuario.password ){
+            document.getElementById("datos").innerHTML = usuario.username;
+            document.getElementById("cerrate").click();
+            localStorage.setItem("logueado", usuario.username);
+        }
+        else {
+            alert (usuario.password);
+            
+        }
+        
     });
 
  return false;       
 }
 );
-
+/*alert(usuario.username);*/
 /*function mostrarNombre() {
     if (nombre != undefined) {
         document.getElementById("datos").innerHTML = usuario.nombre;

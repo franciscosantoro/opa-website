@@ -2,5 +2,10 @@
   "usuario": {
     "username": "francisco",
     "password": "esoeso"
+  },
+  "productos" : {
+  "nombre" : "coso",
+  "precio" : 1500,
+  "descripcion" : "un muy lindo producto"
   }
 }

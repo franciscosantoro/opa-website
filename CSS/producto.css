@@ -1,0 +1,66 @@
+/*ESTE CSS SE ENCARGA DE LAS PROPIEDADES DE LOS PRODUCTOS*/
+.caja {
+    transition: box-shadow .3s;
+    width: 270px;
+    height: 400px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    background: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caja div img{
+    width: 100%;
+    border-radius: 10px;
+
+    
+}
+.botones-prod{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+/*boton para agregar al carrito*/
+.add-carrito{
+    transition: box-shadow .3s;
+    color: #ffffff;
+    background: #c42a2a;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+
+
+/*Para que al pasar el cursor por arriba del div no te permita seleccionar texto*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+/*botom para mostrar mas información*/
+.ver-mas{
+    transition: box-shadow .3s;
+    color: #ffffff;
+    background: #2a72c4;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+
+
+    /*Para que al pasar el cursor por arriba del div no te permita seleccionar texto*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+/*Propiedades de los elementos ap pasarles por arriba*/
+.caja:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.404); 
+  }
+  .add-carrito:hover {
+    box-shadow: 0 0 11px rgb(250, 0, 0); 
+  }
+  .ver-mas:hover {
+    box-shadow: 0 0 11px rgb(0, 106, 255); 
+  }
