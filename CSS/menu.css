@@ -1,4 +1,5 @@
 .menu{
+  z-index: 1;
   white-space: nowrap;
   min-width: min-content;
   height: auto;

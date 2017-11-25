@@ -1,3 +1,4 @@
+//esta parte se encarga de corroborar si ya estas logueado o no, en caso de estarlo muestra el nombre de usuario en el header
 $(document).ready(function(){
     if (localStorage.getItem("logueado") != null){
         document.getElementById("datos").innerHTML = localStorage.getItem("logueado");
@@ -13,10 +14,6 @@ $("#regi").submit ( function registro(event) {
     
         var passregistro = document.getElementById('passregistro').value;
 
-        localStorage.setItem("username", nomregistro);
-
-        localStorage.setItem("password", passregistro);
-
         $.ajax({
     
             type: 'POST',
@@ -25,7 +22,15 @@ $("#regi").submit ( function registro(event) {
     
             data: { username: (nomregistro), password: (passregistro) },
     
-            success: function () {document.getElementById("cerrate").click();},
+            success: function () {
+                document.getElementById("cerrate").click();
+                localStorage.removeItem("logueado");
+                document.getElementById('nomregistro').value = "";
+                document.getElementById('passregistro').value = "";
+                document.getElementById('regiemail').value = "";
+                document.getElementById('reginombre').value = "";
+                document.getElementById('regiapell').value = "";
+        },
     
             failure: function() {alert("Error!");}
     
@@ -35,7 +40,9 @@ $("#regi").submit ( function registro(event) {
 );
 
 
-
+/*Esta función se encarga del inicio de sesión comparando el contenido del archivo json con los valores ingresados en los campos,
+en caso de no ingresar los datos correctos se muestra un error, de lo contrario aparece el nombre de usuario en el header
+(al cual se le agregarán funcionalidades )*/
 $("#login").submit( function() {
     var usuario;
     //cargo los datos del json en una variable
@@ -51,7 +58,7 @@ $("#login").submit( function() {
             localStorage.setItem("logueado", usuario.username);
         }
         else {
-            alert (usuario.password);
+            alert ("Usuario o contraseña incorrecta");
             
         }
         
@@ -60,6 +67,10 @@ $("#login").submit( function() {
  return false;       
 }
 );
+
+
+
+
 /*alert(usuario.username);*/
 /*function mostrarNombre() {
     if (nombre != undefined) {
@@ -80,4 +91,11 @@ $("#login").submit( function() {
             alert("usuario o contraseña incorrecto");
             mostrarNombre();
 
-        } else {}  */
+        } else {}  
+        
+         localStorage.setItem("username", nomregistro);
+
+        localStorage.setItem("password", passregistro);
+        
+        
+        */

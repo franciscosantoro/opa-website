@@ -1,11 +1,11 @@
 {
   "usuario": {
-    "username": "francisco",
-    "password": "esoeso"
+    "username": "cachufleta",
+    "password": "cosocoso"
   },
-  "productos" : {
-  "nombre" : "coso",
-  "precio" : 1500,
-  "descripcion" : "un muy lindo producto"
+  "productos": {
+    "nombre": "coso",
+    "precio": 1500,
+    "descripcion": "un muy lindo producto"
   }
 }

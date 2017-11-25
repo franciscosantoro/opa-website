@@ -48,5 +48,8 @@ setInterval(function(){
 
 }, 4000);
 
+setTimeout(function(){
+	$('.caja').addClass('magictime swashIn cajavisible');
+}, 500);
 
 });
