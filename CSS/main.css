@@ -108,7 +108,7 @@ button
     .botones{
         display: flex;
         flex-direction: row;
-        width: 200px;
+        width: 250px;
         justify-content: space-around;
     }
     .btn-cab{
@@ -162,10 +162,15 @@ button
     /*MAS BLANCO QUE ARROZ SAMÁN (PD: A IE NO LE DOY SOPORTE)*/
 
     .titulo {
+        color:#727272;
+        font-size: 25px;
         margin-top: 50px;
         -ms-flex-item-align: center;
         align-self: center;
         text-align: center;
+    }
+    .titulo h4 {
+        font-family: knight_brush_demoregular;
     }
 
     /*ESTE ES EL CONTENEDOR FLEXBOX QUE ENGLOBA AL MENU Y LOS PRODUCTOS*/
@@ -307,4 +312,12 @@ button
     }
 }
 
+@font-face {
+    font-family: 'knight_brush_demoregular';
+    src: url('CSS/knight_brush-webfont.woff2') format('woff2'),
+         url('CSS/knight_brush-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
