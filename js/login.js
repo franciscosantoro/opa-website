@@ -3,6 +3,13 @@ $(document).ready(function(){
     if (localStorage.getItem("logueado") != null){
         document.getElementById("datos").innerHTML = localStorage.getItem("logueado");
     }
+    else{
+        document.getElementById("datos").innerHTML = "Iniciar sesión";
+        $("#datos").click(function(){
+            $("#myBtn").click();
+            $("#iniciarsesion").click();
+        });
+    }
 });
 
 //formulario de registro, guarda el usuario y la contraseña en un archivo json
@@ -70,7 +77,7 @@ $("#login").submit( function() {
 
 
 
-
+/*todo esto es código chatarra que guardo por si acaso*/
 /*alert(usuario.username);*/
 /*function mostrarNombre() {
     if (nombre != undefined) {

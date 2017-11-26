@@ -71,7 +71,7 @@ button
         width: 100%;
         -ms-flex-item-align: center;
         align-self: center;
-        background-image: url(../images/header.png);
+        background-image: url(../images/header.jpg);
         /*background-color: #e48d1b;*/
         -webkit-box-shadow: 0 2px 6px 0px rgba(59, 59, 59, 0.911);
                 box-shadow: 0 2px 6px 0px rgba(59, 59, 59, 0.911);
