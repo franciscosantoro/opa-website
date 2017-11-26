@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-/*esta clase se aplica solo cuando la página termina de cargar,
+/*esta clase (.cajavisible) se aplica solo cuando la página termina de cargar,
  se asegura de que se ejecute el efecto de entrada para los productos*/
 .cajavisible{
     visibility: visible;
@@ -45,7 +45,7 @@
     -webkit-user-select: none; /* Safari */
             user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
-/*botom para mostrar mas información*/
+/*boton para mostrar mas información*/
 .ver-mas{
     transition: box-shadow .3s;
     color: #ffffff;
@@ -61,7 +61,7 @@
     -webkit-user-select: none; /* Safari */
             user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
-/*Propiedades de los elementos ap pasarles por arriba*/
+/*Propiedades de los productos al pasarles por arriba*/
 .caja:hover {
     box-shadow: 0 0 11px rgba(0, 0, 0, 0.404); 
   }
@@ -72,6 +72,29 @@
     box-shadow: 0 0 11px rgb(0, 106, 255); 
   }
 
+  @media only screen and (max-width: 768px) {
+    /* Para movile */
+    .productos{
+        width: 100%;
+        padding-left: 1px;
+        padding-right: 1px;
+        -ms-flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+    /* Esconde el menu en caso de una pantalla pequeña */
+    .menu {
+        display: none;
+    }
+    .caja{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+  /*propiedades de la animación de los productos al cargar la página*/
   .magictime {
     animation-duration: 0.7s;
     animation-fill-mode: both;

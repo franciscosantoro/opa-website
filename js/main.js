@@ -48,6 +48,8 @@ setInterval(function(){
 
 }, 4000);
 
+
+/*Esta función es la que activa el efecto de aparición de los productos */
 setTimeout(function(){
 	$('.caja').addClass('magictime swashIn cajavisible');
 }, 500);

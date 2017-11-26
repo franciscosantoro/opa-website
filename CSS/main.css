@@ -144,7 +144,7 @@ button
         color: #ffffff;
     }
 
-    /*ESTRA PARTE SE ENCARGA DE QUE LAS PALABRAS "QUE QUERÉS BUSCAR HOY" EN LA BARRA DE BUSQUEDA SE MANTENGAN EN BLANCO*/
+    /*ESTRA PARTE SE ENCARGA DE QUE LAS PALABRAS "QUE QUERÉS BUSCAR HOY" EN LA BARRA DE BUSQUEDA SE MANTENGAN CENTRADAS Y EN BLANCO*/
     ::-moz-placeholder { /* Firefox 19+ */
         color: #ffffff;
         opacity: 1;
@@ -168,9 +168,10 @@ button
         -ms-flex-item-align: center;
         align-self: center;
         text-align: center;
+        
     }
     .titulo h4 {
-        font-family: knight_brush_demoregular;
+        font-family: 'raleway-thin';
     }
 
     /*ESTE ES EL CONTENEDOR FLEXBOX QUE ENGLOBA AL MENU Y LOS PRODUCTOS*/
@@ -189,7 +190,7 @@ button
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-    /*ACÁ VAN LAS PROPIEDADES DEL MENÚ, PERO TIENE SU CSS INDEPENDIENTE (menu.css)*/
+    /*ACÁ VA EL MENÚ, PERO TIENE SU CSS INDEPENDIENTE (menu.css)*/
     .centrar-productos{
         width: 100%;
         display: -webkit-box;
@@ -293,29 +294,11 @@ button
      margin-top: 15px;
     }
     
-@media only screen and (max-width: 768px) {
-    /* Para movile */
-    .productos{
-        width: 100%;
-        padding-left: 0px;
-        -ms-flex-direction: column;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-direction: column;
-    }
-    /* Esconde el menu en caso de una pantalla pequeña */
-    .menu {
-        display: none;
-    }
-    .caja{
-        width: 100%;
-    }
-}
 
 @font-face {
-    font-family: 'knight_brush_demoregular';
-    src: url('CSS/knight_brush-webfont.woff2') format('woff2'),
-         url('CSS/knight_brush-webfont.woff') format('woff');
+    font-family: 'raleway-thin';
+    src: url('../fonts/Raleway-Thin.ttf') format('truetype'),
+         url('../fonts/Raleway-Thin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
