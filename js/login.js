@@ -63,6 +63,7 @@ $("#login").submit( function() {
             document.getElementById("datos").innerHTML = usuario.username;
             document.getElementById("cerrate").click();
             localStorage.setItem("logueado", usuario.username);
+            location.reload();
         }
         else {
             alert ("Usuario o contraseña incorrecta");
@@ -70,7 +71,7 @@ $("#login").submit( function() {
         }
         
     });
-
+    
  return false;       
 }
 );

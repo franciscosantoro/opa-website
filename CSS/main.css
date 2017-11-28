@@ -142,6 +142,8 @@ button
         margin-top: 5px;
         font-size: 20px;
         color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
     }
 
     /*ESTRA PARTE SE ENCARGA DE QUE LAS PALABRAS "QUE QUERÉS BUSCAR HOY" EN LA BARRA DE BUSQUEDA SE MANTENGAN CENTRADAS Y EN BLANCO*/
