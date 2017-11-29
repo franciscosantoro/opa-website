@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/menu.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/font-awesome.css">
     <link rel="stylesheet" href="CSS/slider.css">
+    <link rel="stylesheet" href="CSS/magic.css">
 
 
 </head>
@@ -48,7 +49,7 @@
 
             <div class="botones">
 
-                <div id="datos"> </div>
+                <button id="datos"></button>
 
                 <div class="btn-cab">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -73,7 +74,7 @@
 
                 <div class="tab">
                     <button id="clicktab" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</button>
-                    <button class="tablinks" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
+                    <button class="tablinks" id="iniciarsesion" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
                 </div>
 
                 <div id="registrarse" class="tabcontent">
@@ -83,14 +84,14 @@
                                 <label>Nombre completo
                                     <span class="required">*</span>
                                 </label>
-                                <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" required/>
+                                <input id="reginombre" type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input id="regiapell" type="text" name="field2" class="field-divided" placeholder="Apellido" required/>
                                 
                             </li>
                             <li>
                                 <label>Email
                                     <span class="required">*</span>
                                 </label>
-                                <input type="email" name="field3" class="field-long" required />
+                                <input id="regiemail" type="email" name="field3" class="field-long" required />
                             </li>
 
                             <li>
@@ -156,7 +157,7 @@
 
 
         <div class="titulo">
-            <h4>Ofertas del día</h4>
+            <h4>OFERTAS DEL DÍA</h4>
         </div>
 
         <div class="medio">
@@ -177,7 +178,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="html/estetica.html">
+                            <a href="quienessomos.html">
                                 <button class="button btn-este">
                                     <i class="fa fa-scissors"></i>
                                     <span> &nbsp Estétca</span>
@@ -255,7 +256,7 @@
                                     <div class="add-carrito">
                                         <span>
                                             <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
-                                    </div>
+                                        </div>
                                     <div class="ver-mas">
                                         <span>
                                             <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>

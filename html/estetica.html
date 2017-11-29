@@ -7,14 +7,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>oPa!</title>
-    <link rel="stylesheet" type="text/css" href="CSS/main.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/form.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/modal.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/producto.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/menu.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/font-awesome.css">
-    <link rel="stylesheet" href="CSS/slider.css">
+    <title>oPa! Estética</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/form.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/modal.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/producto.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/font-awesome.css">
+    <link rel="stylesheet" href="../CSS/slider.css">
+    <link rel="stylesheet" href="../CSS/magic.css">
 
 
 </head>
@@ -29,7 +30,7 @@
             <!--CONTENEDOR PARA EL HEADER, INCLUYE LOGO Y BUSCADOR (POR AHORA)-->
 
             <div class="logo">
-                <img src="images/logo2.png">
+                <img src="../images/logo2.png">
             </div>
 
             <div class="buscador">
@@ -48,7 +49,7 @@
 
             <div class="botones">
 
-                <div id="datos"> </div>
+                <button id="datos"></button>
 
                 <div class="btn-cab">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -73,7 +74,7 @@
 
                 <div class="tab">
                     <button id="clicktab" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</button>
-                    <button class="tablinks" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
+                    <button class="tablinks" id="iniciarsesion" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
                 </div>
 
                 <div id="registrarse" class="tabcontent">
@@ -83,14 +84,14 @@
                                 <label>Nombre completo
                                     <span class="required">*</span>
                                 </label>
-                                <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" required/>
+                                <input id="reginombre" type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input id="regiapell" type="text" name="field2" class="field-divided" placeholder="Apellido" required/>
                                 
                             </li>
                             <li>
                                 <label>Email
                                     <span class="required">*</span>
                                 </label>
-                                <input type="email" name="field3" class="field-long" required />
+                                <input id="regiemail" type="email" name="field3" class="field-long" required />
                             </li>
 
                             <li>
@@ -156,7 +157,7 @@
 
 
         <div class="titulo">
-            <h4>Ofertas del día</h4>
+            <h4>ESTÉTICA</h4>
         </div>
 
         <div class="medio">
@@ -169,7 +170,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="../index.html">
                                 <button class="button btn-home">
                                     <i class="fa fa-home"></i>
                                     <span> &nbsp Home</span>
@@ -177,7 +178,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="html/estetica.html">
+                            <a href="quienessomos.html">
                                 <button class="button btn-este">
                                     <i class="fa fa-scissors"></i>
                                     <span> &nbsp Estétca</span>
@@ -238,7 +239,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -255,7 +256,7 @@
                                     <div class="add-carrito">
                                         <span>
                                             <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
-                                    </div>
+                                        </div>
                                     <div class="ver-mas">
                                         <span>
                                             <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
@@ -271,39 +272,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
-                        </div>
-
-                        <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
-                        </div>
-
-                        <div class="detalles-prod">
-                            <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
-
-                                <div class="botones-prod">
-
-                                    <div class="add-carrito">
-                                        <span>
-                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
-                                    </div>
-                                    <div class="ver-mas">
-                                        <span>
-                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="caja">
-
-
-                        <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -335,7 +304,39 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Perfume</h2>
+                            <h3>1.399€</h3>
+                        </div>
+
+                        <div class="detalles-prod">
+                            <div>
+                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -369,7 +370,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -401,7 +402,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -433,7 +434,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -465,7 +466,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -497,7 +498,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -529,7 +530,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -561,7 +562,7 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
@@ -607,20 +608,20 @@
             <ul class="slider">
 
                 <li>
-                    <img src="images/1.jpg">
+                    <img src="../images/1.jpg">
 
                 </li>
                 <li>
 
-                    <img src="images/2.jpg" alt="">
+                    <img src="../images/2.jpg" alt="">
 
                 </li>
                 <li>
-                    <img src="images/3.jpg" alt="">
+                    <img src="../images/3.jpg" alt="">
 
                 </li>
                 <li>
-                    <img src="images/4.jpg" alt="">
+                    <img src="../images/4.jpg" alt="">
 
                 </li>
             </ul>
@@ -646,19 +647,19 @@
 
                 <div class="logopie">
                     <a href="">
-                        <img src="images\logo2pie.png">
+                        <img src="../images/logo2pie.png">
                     </a>
                 </div>
 
                 <div class="tarjetas">
                     <h5>En OPA aceptamos</h5>
-                    <img src="images\creditel.jpg">
-                    <img src="images\abitab.jpg">
-                    <img src="images\oca.jpg">
-                    <img src="images\cabal.jpg">
-                    <img src="images\bbva.jpg">
-                    <img src="images\visa.jpg">
-                    <img src="images\mastercard.jpg">
+                    <img src="../images\creditel.jpg">
+                    <img src="../images\abitab.jpg">
+                    <img src="../images\oca.jpg">
+                    <img src="../images\cabal.jpg">
+                    <img src="../images\bbva.jpg">
+                    <img src="../images\visa.jpg">
+                    <img src="../images\mastercard.jpg">
 
                 </div>
 
@@ -728,10 +729,10 @@
     <!--ACÁ TERMINA EL CONTENEDOR PARA FLEXBOX DE TODA LA PÁGINA-->
 
     <!--ACÁ SE CARGAN LOS SCRIPT (ABIERTO A MODIFICACIONES)-->
-    <script src="js/modal.js"></script>
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/login.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
 
 </body>
 
