@@ -1,0 +1,189 @@
+.menu{
+  z-index: 1;
+  white-space: nowrap;
+  min-width: min-content;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.fixed
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+nav {
+  margin-top: auto;
+  position: absolute;
+  text-align: left;
+}
+
+nav li {
+
+  display: block;
+  list-style-type: none;
+}
+
+.button {
+  /**/
+  background-color: #212731;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  height: 70px;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom:10px; 
+  width: 70px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.button i {
+  display: inline-block;
+}
+.button span {
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.button span:after {
+  opacity: 0;
+  top: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+
+/*ACÁ SE ESPECIFICA LA FORMA DE FUNCINAR DE LOS BOTONES CUANDO SE LES HACE "HOVER"*/
+
+/*HOME*/
+.btn-home{
+  border-radius: 0px 3px 0px 0px;
+}
+.btn-home span{
+    display: none;
+    font-size: 20px;
+}
+.btn-home:hover{
+  border-radius: 0px 0px 0px 0px;
+  background-color: #a31919;
+}
+.btn-home:hover span{
+  display: inline-block;
+  font-size: 20px;
+}
+
+/*ESTÉTICA*/
+.btn-este span{
+  display: none;
+    font-size: 20px;
+}
+.btn-este:hover{
+  background-color: #bb6400;
+}
+.btn-este:hover span{
+    display: inline-block;
+  font-size: 20px;
+}
+
+/*TIEMPO LIBRE*/
+.btn-tl span{
+  display: none;
+    font-size: 20px;
+}
+.btn-tl:hover{
+  background-color: #808d09;
+}
+.btn-tl:hover span{
+  display: inline-block;
+  font-size: 20px;
+
+}
+
+/*HOTELES*/
+.btn-hot span{
+  display: none;
+    font-size: 20px;
+}
+.btn-hot:hover{
+  background-color: #2fa71f;
+}
+.btn-hot:hover span{
+  display: inline-block;
+  font-size: 20px;
+}
+
+/*VIAJES*/
+.btn-viaj span{
+  display: none;
+    font-size: 20px;
+}
+.btn-viaj:hover{
+  background-color: #2383af;
+}
+.btn-viaj:hover span{
+  display: inline-block;
+  font-size: 20px;
+}
+
+/*SERVICIOS*/
+.btn-serv span{
+  display: none;
+    font-size: 20px;
+}
+.btn-serv:hover{
+  background-color: #b448af;
+}
+.btn-serv:hover span{
+  display: inline-block;
+  font-size: 20px;
+}
+
+/*REGISTRO*/
+.btn-reg{
+  border-radius: 0px 0px 3px 0px;
+}
+.btn-reg span{
+  display: none;
+    font-size: 20px;
+}
+.btn-reg:hover{
+  border-radius: 0px 0px 0px 0px;
+  background-color: #70007a;
+}
+.btn-reg:hover span{
+  display: inline-block;
+  font-size: 20px;
+}
+
+/*ACÁ TERMINAN LAS PROPIEDADES DE LOS BOTONES DEL MENÚ CON HOVER*/
+
+.button:hover {
+  width: 200px;
+}
+
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media only screen and (max-width: 1366px) {
+  .button {
+    /*cambia de tamaño para adaptarse a pantallas mas pequeñas*/
+    height: 50px;
+    font-size: 25px;
+    padding-top: 7px;
+    padding-bottom:7px; 
+    width: 60px;
+  }
+  .button:hover  span{
+    font-size: 17px;
+    
+  }
+}
