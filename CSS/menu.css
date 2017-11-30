@@ -1,6 +1,7 @@
 .menu{
   
   white-space: nowrap;
+  z-index: 1;
   min-width: min-content;
   height: auto;
   box-sizing: border-box;
@@ -11,7 +12,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 1;
 }
 
 
