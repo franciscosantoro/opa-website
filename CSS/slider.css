@@ -1,17 +1,23 @@
+
+
 .slideshow
 {
   margin-top: 10px;
   margin-bottom: 5px;
-	width: 100%;
+	width: auto;
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
+  width: 89%;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
 	
 }
 
 .slider li, ul{
-
-	width: 100%;
+  list-style-type: none;
+  width: 100%;
 
 }
 
