@@ -168,8 +168,8 @@ button
         font-size: 25px;
         margin-top: 50px;
         -ms-flex-item-align: center;
-        align-self: left;
-        text-align: left;
+        align-self: center;
+        text-align: center;
         padding-left: 113px;
         
     }

@@ -1,5 +1,9 @@
 
 
+.cent-slide{
+  display: flex;
+  justify-content: center;
+}
 .slideshow
 {
   margin-top: 10px;
@@ -8,7 +12,7 @@
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-  width: 89%;
+  width: 80%;
   padding-left: 10px;
   padding-bottom: 10px;
 
