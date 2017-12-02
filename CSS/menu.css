@@ -1,3 +1,6 @@
+.btnMenu{
+  visibility: hidden;
+}
 .menu{
   white-space: nowrap;
   z-index: 1;
@@ -193,4 +196,6 @@ nav li {
 .menu {
   display: none;
 }
+.btnMenu {
+  visibility: visible;}
 }

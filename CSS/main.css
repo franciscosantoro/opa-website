@@ -76,7 +76,13 @@ button
         -webkit-box-shadow: 0 2px 6px 0px rgba(59, 59, 59, 0.911);
                 box-shadow: 0 2px 6px 0px rgba(59, 59, 59, 0.911);
     }
-
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+}
     .cabecera img {
         display: block;
         margin-left: auto;

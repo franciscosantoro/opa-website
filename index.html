@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/producto.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/menu.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="CSS/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="CSS/menumov.css">
     <link rel="stylesheet" href="CSS/slider.css">
 
 
@@ -29,8 +30,17 @@
             <!--CONTENEDOR PARA EL HEADER, INCLUYE LOGO Y BUSCADOR (POR AHORA)-->
 
             <div class="logo">
-                <img src="images/logo2.png">
+                    <div class="btnMenu">
+                            <span style="font-size:45px;cursor:pointer; color:white;" onclick="openNav()">&#9776;</span>
+                        </div>
+                <div>
+                        <img src="images/logo2.png">
+                </div>
+                
             </div>
+            
+            
+            
 
             <div class="buscador">
 
@@ -170,7 +180,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="index.html">
                                 <button class="button btn-home">
                                     <i class="fa fa-home"></i>
                                     <span> &nbsp Home</span>
@@ -229,7 +239,20 @@
 
                 </nav>
             </div>   
-
+            <!--ESTE ES EL MENÚ PARA MOVILE, POR DEFAULT ESTÁ OCULTO-->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="index.html">Home</a>
+                  <a href="html/estetica.html">Estétca</a>
+                  <a href="html/tiempolibre.html">Tiempo libre</a>
+                  <a href="html/hoteles.html">Hoteles</a>
+                  <a href="html/viajes.html">Viajes</a>
+                  <a href="html/servicios.html">Servicios</a>
+                  <a  id="myBtn">Registro</a>
+                </div>
+              </div>
+              <!--ACÁ TERMINA EL MENÚ MOVILE-->
 
 
             <!--ACÁ EMPEZAN LOS PRODUCTOS-->
@@ -776,6 +799,7 @@
     <script src="js/login.js"></script>
     <script src="js/menu.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menumov.js"></script>
 
 </body>
 
