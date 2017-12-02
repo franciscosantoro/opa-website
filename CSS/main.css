@@ -360,10 +360,8 @@ button {
        
         
     }
-    .buscador {
-        visibility: hidden;
-    }
     .lupa i {
         visibility: hidden;
     }
-}
+    }
+    
