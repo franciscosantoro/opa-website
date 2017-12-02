@@ -188,3 +188,9 @@ nav li {
     
   }
 }
+@media only screen and (max-width: 768px) {
+/* Esconde el menu en caso de una pantalla pequeña */
+.menu {
+  display: none;
+}
+}

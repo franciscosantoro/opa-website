@@ -83,10 +83,7 @@
         -webkit-box-direction: normal;
                 flex-direction: column;
     }
-    /* Esconde el menu en caso de una pantalla pequeña */
-    .menu {
-        display: none;
-    }
+    
     .caja{
         width: 100%;
         height: auto;
