@@ -75,9 +75,9 @@
   @media only screen and (max-width: 768px) {
     /* Para movile */
     .productos{
-        width: 100%;
+        width: 95%;
         padding-left: 1px;
-        padding-right: 1px;
+        padding-right: 2%;
         -ms-flex-direction: column;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
