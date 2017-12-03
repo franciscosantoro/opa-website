@@ -58,20 +58,27 @@
 
             <div class="botones">
 
-                <div id="datos"> </div>
+                <div> 
+                    <div id="datos"></div>
+                    <div id="salir" onclick="salir()" style="text-align:center; color:white;"></div>
+                </div>
 
                 <div class="btn-cab">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
 
-                <div class="btn-cab">
+                <div class="btn-cab" id="btnCarrito">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </div>
 
             </div>
         </div>
 
-
+        <!--<div id="carrito" class="modal">
+                <div class="modal-content">
+                      <span>Carrito</span>  <span class="close" id="cerrate">&times;</span>
+                </div>
+        </div>-->
 
         <!--ACÁ EMPIEZA EL FORMULARIO DE REGISTRO (no se ve hasta ejecutarlo)-->
 
@@ -197,7 +204,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="html/tiempolibre.html">
                                 <button class="button btn-tl">
                                     <i class="fa fa-futbol-o"></i>
                                     <span> &nbsp Tiempo Libre</span>
@@ -205,7 +212,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="html/hoteles.html">
                                 <button class="button btn-hot">
                                     <i class="fa fa-bed"></i>
                                     <span> &nbsp Hoteles</span>
@@ -213,7 +220,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="html/viajes.html">
                                 <button class="button btn-viaj">
                                     <i class="fa fa-plane"></i>
                                     <span> &nbsp Viajes</span>
@@ -221,7 +228,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="html/servicios.html">
                                 <button class="button btn-serv">
                                     <i class="fa fa-coffee"></i>
                                     <span> &nbsp Servicios</span>
@@ -268,7 +275,7 @@
 
             <!--ACÁ EMPEZAN LOS PRODUCTOS-->
             <div class="centrar-productos">
-                <div class="productos">
+                <div class="productos" id="productos">
 
 
                     <div class="caja">
@@ -280,18 +287,18 @@
 
                         <div class="datos-prod">
                             <h2>Poeme el perfume seductor</h2>
-                            <h3>usd 890</h3>
+                            <h3>USD 890</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>El perfume con mas ventas en Grancia y toda Europa llega a Uruguay.</p>
+                                <p>El perfume con mas ventas en Francia y toda Europa llega a Uruguay.</p>
 
                                 <div class="botones-prod">
 
                                     <div class="add-carrito">
                                         <span>
-                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true" onclick="addtocart()"></i>&nbsp; Comprar</span>
                                     </div>
                                     <div class="ver-mas">
                                         <span>
@@ -811,6 +818,7 @@
     <script src="js/menu.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/menumov.js"></script>
+    <!--<script src="js/carrito.js"></script>-->
 
 </body>
 

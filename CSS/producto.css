@@ -5,13 +5,14 @@
     transition: box-shadow .3s;
     width: 270px;
     height: 400px;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     margin: 5px;
     background: #ffffff; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.404);
 }
 /*esta clase (.cajavisible) se aplica solo cuando la página termina de cargar,
  se asegura de que se ejecute el efecto de entrada para los productos*/
@@ -21,6 +22,7 @@
 .caja div img{
     width: 100%;
     border-radius: 10px;
+    
 
     
 }
@@ -63,7 +65,7 @@
 }
 /*Propiedades de los productos al pasarles por arriba*/
 .caja:hover {
-    box-shadow: 0 0 11px rgba(0, 0, 0, 0.404); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.438); 
   }
   .add-carrito:hover {
     box-shadow: 0 0 11px rgb(250, 0, 0); 

@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>oPa!</title>
-    <link rel="stylesheet" type="text/css" href="CSS/main.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/form.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/modal.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/producto.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/menu.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="CSS/font-awesome.css">
-    <link rel="stylesheet" href="CSS/slider.css">
-    <link rel="stylesheet" href="CSS/magic.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/form.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/modal.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/producto.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/menu.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/menumov.css">
+    <link rel="stylesheet" href="../CSS/slider.css">
 
 
 </head>
@@ -30,8 +30,17 @@
             <!--CONTENEDOR PARA EL HEADER, INCLUYE LOGO Y BUSCADOR (POR AHORA)-->
 
             <div class="logo">
-                <img src="images/logo2.png">
+                <div class="btnMenu">
+                    <span style="font-size:45px;cursor:pointer; color:white;" onclick="openNav()">&#9776;</span>
+                </div>
+                <div>
+                    <img src="../images/logo2.png">
+                </div>
+
             </div>
+
+
+
 
             <div class="buscador">
 
@@ -49,20 +58,27 @@
 
             <div class="botones">
 
-                <button id="datos"></button>
+                    <div> 
+                            <div id="datos"></div>
+                            <div id="salir" onclick="salir()" style="text-align:center; color:white;"></div>
+                        </div>
 
                 <div class="btn-cab">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
 
-                <div class="btn-cab">
+                <div class="btn-cab" id="btnCarrito">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </div>
 
             </div>
         </div>
 
-
+        <!--<div id="carrito" class="modal">
+                <div class="modal-content">
+                      <span>Carrito</span>  <span class="close" id="cerrate">&times;</span>
+                </div>
+        </div>-->
 
         <!--ACÁ EMPIEZA EL FORMULARIO DE REGISTRO (no se ve hasta ejecutarlo)-->
 
@@ -74,7 +90,7 @@
 
                 <div class="tab">
                     <button id="clicktab" class="tablinks" onclick="openTab(event, 'registrarse')">Registrarse</button>
-                    <button class="tablinks" id="iniciarsesion" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
+                    <button class="tablinks" onclick="openTab(event, 'iniciar')">Iniciar sesión</button>
                 </div>
 
                 <div id="registrarse" class="tabcontent">
@@ -84,14 +100,15 @@
                                 <label>Nombre completo
                                     <span class="required">*</span>
                                 </label>
-                                <input id="reginombre" type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input id="regiapell" type="text" name="field2" class="field-divided" placeholder="Apellido" required/>
+                                <input type="text" name="field1" class="field-divided" placeholder="Nombre" required />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Apellido" required/>
+
                                 
                             </li>
                             <li>
                                 <label>Email
                                     <span class="required">*</span>
                                 </label>
-                                <input id="regiemail" type="email" name="field3" class="field-long" required />
+                                <input type="email" name="field3" class="field-long" required />
                             </li>
 
                             <li>
@@ -115,7 +132,7 @@
                             </li>
 
                             <li>
-                                <input type="submit"  class="submit" value="Registrarse"/>
+                                <input type="submit" class="submit" value="Registrarse" />
                             </li>
                         </ul>
                     </form>
@@ -142,7 +159,7 @@
 
 
                             <li>
-                                <input type="submit" class="submit" value="Iniciar"/>
+                                <input type="submit" class="submit" value="Iniciar" />
                             </li>
                         </ul>
                     </form>
@@ -157,11 +174,12 @@
 
 
         <div class="titulo">
-            <h4>OFERTAS DEL DÍA</h4>
+            <h4>Servicios</h4>
         </div>
 
+        <!--CONTENEDOR DEL MENU Y LOS PRODUCTOS-->
         <div class="medio">
-            <!--CONTENEDOR DEL MENU Y LOS PRODUCTOS-->
+
 
             <!--ACÁ VA EL MENÚ-->
 
@@ -170,7 +188,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="../index.html">
                                 <button class="button btn-home">
                                     <i class="fa fa-home"></i>
                                     <span> &nbsp Home</span>
@@ -178,7 +196,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="estetica.html">
                                 <button class="button btn-este">
                                     <i class="fa fa-scissors"></i>
                                     <span> &nbsp Estétca</span>
@@ -186,7 +204,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="tiempolibre.html">
                                 <button class="button btn-tl">
                                     <i class="fa fa-futbol-o"></i>
                                     <span> &nbsp Tiempo Libre</span>
@@ -194,7 +212,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="hoteles.html">
                                 <button class="button btn-hot">
                                     <i class="fa fa-bed"></i>
                                     <span> &nbsp Hoteles</span>
@@ -202,7 +220,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="viajes.html">
                                 <button class="button btn-viaj">
                                     <i class="fa fa-plane"></i>
                                     <span> &nbsp Viajes</span>
@@ -210,7 +228,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="quienessomos.html">
+                            <a href="servicios.html">
                                 <button class="button btn-serv">
                                     <i class="fa fa-coffee"></i>
                                     <span> &nbsp Servicios</span>
@@ -229,60 +247,52 @@
 
                 </nav>
             </div>
+            <!--ESTE ES EL MENÚ PARA MOVILE, POR DEFAULT ESTÁ OCULTO-->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="../index.html">
+                        <i class="fa fa-home"></i> Home</a>
+                    <a href="estetica.html">
+                        <i class="fa fa-scissors"></i> Estétca</a>
+                    <a href="tiempolibre.html">
+                        <i class="fa fa-futbol-o"></i> Tiempo libre</a>
+                    <a href="hoteles.html">
+                        <i class="fa fa-bed"></i> Hoteles</a>
+                    <a href="viajes.html">
+                        <i class="fa fa-plane"></i> Viajes</a>
+                    <a href="servicios.html">
+                        <i class="fa fa-coffee"></i> Servicios</a>
+                    <a id="myBtn2">
+                        <i class="fa fa-user"></i>
+                        <span> Registro</span>
+
+                    </a>
+                </div>
+            </div>
+            <!--ACÁ TERMINA EL MENÚ MOVILE-->
+
 
             <!--ACÁ EMPEZAN LOS PRODUCTOS-->
             <div class="centrar-productos">
-                <div class="productos">
+                <div class="productos" id="productos">
 
 
                     <div class="caja">
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/1.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>Poeme el perfume seductor</h2>
+                            <h3>USD 890</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
-
-                                <div class="botones-prod">
-
-                                    <div class="add-carrito">
-                                        <span>
-                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
-                                        </div>
-                                    <div class="ver-mas">
-                                        <span>
-                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="caja">
-
-
-                        <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
-                        </div>
-
-                        <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
-                        </div>
-
-                        <div class="detalles-prod">
-                            <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>El perfume con mas ventas en Francia y toda Europa llega a Uruguay.</p>
 
                                 <div class="botones-prod">
 
@@ -300,21 +310,22 @@
 
 
                     </div>
+
                     <div class="caja">
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/4.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>PlayStation 4 PS4 Slim + Juego</h2>
+                            <h3>USD 487</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>PS4 te ofrece juegos sin límites. Aventuras inolvidables...</p>
 
                                 <div class="botones-prod">
 
@@ -336,51 +347,17 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/5.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>Liquidación de verano en Jean Vernier desde</h2>
+                            <h3>$ 400</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
-
-                                <div class="botones-prod">
-
-                                    <div class="add-carrito">
-                                        <span>
-                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
-                                    </div>
-                                    <div class="ver-mas">
-                                        <span>
-                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="caja">
-
-
-                        <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
-                        </div>
-
-                        <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
-                        </div>
-
-                        <div class="detalles-prod">
-                            <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>Las mejores prendas y accesorios para el hombre las encontras aca..</p>
 
                                 <div class="botones-prod">
 
@@ -402,17 +379,49 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/6.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>Los mejores conjuntos en oferta desde</h2>
+                            <h3>$ 990</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>Encontra tu estilo con los conjuntos y prendas que tenemos para vos.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="../images/products/7.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Dos combos regulares. RODEO BURGUER</h2>
+                            <h3>$ 74</h3>
+                        </div>
+
+                        <div class="detalles-prod">
+                            <div>
+                                <p>Las más ricas hamburguesas al mejor precio desde $ 74.</p>
 
                                 <div class="botones-prod">
 
@@ -434,17 +443,17 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/8.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>Bandeja cooler con hub usb</h2>
+                            <h3>USD 30</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>Manten tu notebook sobre una superficie adecuada para mejor rendimiento.</p>
 
                                 <div class="botones-prod">
 
@@ -466,17 +475,17 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/9.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>Sumer Sale!! con descuentos de hasta</h2>
+                            <h3>50%</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>LLevate todo para pasarla de fiesta este verano, accesorios ropa y juguetes..</p>
 
                                 <div class="botones-prod">
 
@@ -498,17 +507,17 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/10.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>Rebajas en textil en Alcampo desde</h2>
+                            <h3>$ 890</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>Veni a comprobar las exceletes rebajas que tenemos para vos.</p>
 
                                 <div class="botones-prod">
 
@@ -530,17 +539,17 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/11.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>Juego de comedor en madera premium</h2>
+                            <h3>$ 4299</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>Pasa por divino para ver lo mejor en muebles para tu hogar.</p>
 
                                 <div class="botones-prod">
 
@@ -562,17 +571,81 @@
 
 
                         <div class="img-prod">
-                            <img src="images/products/1.jpg" alt="Img" />
+                            <img src="../images/products/12.jpg" alt="Img" />
                         </div>
 
                         <div class="datos-prod">
-                            <h2>Perfume</h2>
-                            <h3>1.399€</h3>
+                            <h2>Griferia Grohe para baño y cocina desde</h2>
+                            <h3>$ 2990</h3>
                         </div>
 
                         <div class="detalles-prod">
                             <div>
-                                <p>Un perfume francés extremadamente caro, supongo que será muy bueno.</p>
+                                <p>La mejor griferia del mundo ahora esta en Uruguay.</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="../images/products/13.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Nos volvimos loco con las rebajas</h2>
+                            <h3>desde 70%</h3>
+                        </div>
+
+                        <div class="detalles-prod">
+                            <div>
+                                <p>Pantalones chino de hombre, excelente calidad y mucho mas..</p>
+
+                                <div class="botones-prod">
+
+                                    <div class="add-carrito">
+                                        <span>
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp; Comprar</span>
+                                    </div>
+                                    <div class="ver-mas">
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>&nbsp; Ver más</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="caja">
+
+
+                        <div class="img-prod">
+                            <img src="../images/products/14.jpg" alt="Img" />
+                        </div>
+
+                        <div class="datos-prod">
+                            <h2>Todo para el deporte en macri</h2>
+                            <h3></h3>
+                        </div>
+
+                        <div class="detalles-prod">
+                            <div>
+                                <p>Encontra las mejores marcas y la mayor variedad en nuestras tiendas.</p>
 
                                 <div class="botones-prod">
 
@@ -603,63 +676,72 @@
 
             </div>
         </div>
+
         <!--ACÁ EMPIEZA EL SLIDER-->
-        <div class="slideshow">
-            <ul class="slider">
+        <div class="cent-slide">
+            <div class="slideshow">
+                <ul class="slider">
 
-                <li>
-                    <img src="images/1.jpg">
+                    <li>
+                        <img src="../images/1.jpg">
 
-                </li>
-                <li>
+                    </li>
+                    <li>
 
-                    <img src="images/2.jpg" alt="">
+                        <img src="../images/2.jpg" alt="">
 
-                </li>
-                <li>
-                    <img src="images/3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/3.jpg" alt="">
 
-                </li>
-                <li>
-                    <img src="images/4.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="../images/4.jpg" alt="">
 
-                </li>
-            </ul>
+                    </li>
+                </ul>
 
-            <div class="left">
-                <span class="fa fa-chevron-left">
-                </span>
+                <div class="left">
+                    <span class="fa fa-chevron-left">
+                    </span>
+                </div>
+                <div class="right">
+                    <span class="fa fa-chevron-right">
+                    </span>
+                </div>
+
             </div>
-            <div class="right">
-                <span class="fa fa-chevron-right">
-                </span>
-            </div>
-
         </div>
         <!--ACÁ TERMINA EL SLIDER-->
+
+
+
+
+
+
 
         <!--ACA EMPIEZA EL FOOTER, SIGUE DENTRO DEL "CONTENEDOR"-->
         <div class="pie">
             <div class="columnaredes">
-                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-                <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/opwebsite/?hl=es-la"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/opa_web"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/Opa-Web-Site-1565056763573856/"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
 
                 <div class="logopie">
                     <a href="">
-                        <img src="images\logo2pie.png">
+                        <img src="../images/logo2pie.png">
                     </a>
                 </div>
 
                 <div class="tarjetas">
                     <h5>En OPA aceptamos</h5>
-                    <img src="images\creditel.jpg">
-                    <img src="images\abitab.jpg">
-                    <img src="images\oca.jpg">
-                    <img src="images\cabal.jpg">
-                    <img src="images\bbva.jpg">
-                    <img src="images\visa.jpg">
-                    <img src="images\mastercard.jpg">
+                    <img src="../images/creditel.jpg">
+                    <img src="../images/abitab.jpg">
+                    <img src="../images/oca.jpg">
+                    <img src="../images/cabal.jpg">
+                    <img src="../images/bbva.jpg">
+                    <img src="../images/visa.jpg">
+                    <img src="../images/mastercard.jpg">
 
                 </div>
 
@@ -729,10 +811,14 @@
     <!--ACÁ TERMINA EL CONTENEDOR PARA FLEXBOX DE TODA LA PÁGINA-->
 
     <!--ACÁ SE CARGAN LOS SCRIPT (ABIERTO A MODIFICACIONES)-->
-    <script src="js/modal.js"></script>
-    <script src="js/jquery-3.1.0.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/login.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/menumov.js"></script>
+    <!--<script src="js/carrito.js"></script>-->
 
 </body>
 

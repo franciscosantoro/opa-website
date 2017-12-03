@@ -2,6 +2,7 @@
 $(document).ready(function(){
     if (localStorage.getItem("logueado") != null){
         document.getElementById("datos").innerHTML = localStorage.getItem("logueado");
+        document.getElementById("salir").innerHTML = "salir";
     }
     else{
         document.getElementById("datos").innerHTML = "Iniciar sesión";
@@ -11,7 +12,10 @@ $(document).ready(function(){
         });
     }
 });
-
+function salir() {
+    localStorage.clear();
+    location.reload();
+  }
 //formulario de registro, guarda el usuario y la contraseña en un archivo json
 $("#regi").submit ( function registro(event) {
 

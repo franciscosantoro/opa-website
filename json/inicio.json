@@ -3,9 +3,17 @@
     "username": "pepe",
     "password": "coso"
   },
-  "productos": {
-    "nombre": "coso",
-    "precio": 1500,
-    "descripcion": "un muy lindo producto"
-  }
+  "catalogo": [{"id":"P01", "nombre":"Poeme perfume", "precio": "890", "imagen": "../images/products/1.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P02", "nombre":"Playstation4", "precio": "10000", "imagen": "../images/products/2.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P03", "nombre":"Jean Vernier", "precio": "400", "imagen": "../images/products/3.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P04", "nombre":"Conjuntos de oferta", "precio": "990", "imagen": "../images/products/4.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P05", "nombre":"Dos combos regulares. RODEO BURGUER", "precio": "150", "imagen": "../images/products/5.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P06", "nombre":"Vandeja cooler con hub usb", "precio": "200", "imagen": "../images/products/6.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P07", "nombre":"Sumer sale!!!", "precio": "300", "imagen": "../images/products/7.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P08", "nombre":"Rebajas en textíl en Alcampo", "precio": "900", "imagen": "../images/products/8.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P09", "nombre":"Juego de comedor en madera premium", "precio": "4299", "imagen": "../images/products/9.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P10", "nombre":"Grifería Goche para baño y cocina", "precio": "2990", "imagen": "../images/products/10.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"},
+                {"id":"P11", "nombre":"Rebajas en ropa", "precio": "230", "imagen": "../images/products/11.jpg"},
+                {"id":"P12", "nombre":"Calzado deportívo", "precio": "750", "imagen": "../images/products/12.jpg","descripcion": "lorem ipsum dolor sit amet ,consectetur adipiscing elit"}]
+  
 }
